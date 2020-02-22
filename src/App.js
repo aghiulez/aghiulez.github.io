@@ -10,68 +10,25 @@ import { useState, useEffect } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 
+
+
+import pages from './pages'; 
+
+
 function App() {
 
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null);  //initial value of user is null 
   useEffect(() => {
     // NOTE: Use your username below
-    fetch('https://gitconnected.com/v1/portfolio/aghiulez')
+    fetch('https://gitconnected.com/v1/portfolio/aghiulez') // returns a promise containing the response 
       .then(res => res.json())
       .then(user => {
         setUser(user);
       });
-  }, []);
+  }, []); //empty array (as second arg) will only call effect on initial render...
   
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}  
-        {
-          <p>Welcome to Ara Matthew's Online Portfolio</p>
-        }
-
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        
-        <a
-          className="App-link"
-          href="https://github.com/aghiulez"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-
-        <a
-          className="App-link"
-          href="https://github.com/aghiulez"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          FaceBook
-        </a>
-
-        <a
-          className="App-link"
-          href="https://github.com/aghiulez"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-
-        <a
-          className="App-link"
-          href="https://github.com/aghiulez"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-
-      </header>
-    </div>
+    <pages user ={user} />
   );
 }
 
