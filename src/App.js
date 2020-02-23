@@ -12,7 +12,7 @@ import './App.css';
 
 
 
-import Navbar from './components/navigation/Navbar';
+import Navbar from './components/Navigation/Navbar';
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
     fetch('https://gitconnected.com/v1/portfolio/aghiulez') // returns a promise containing the response 
       .then(res => res.json())
       .then(user => {
+        console.log(user.basics)
         setUser(user);
       });
   }, []); //empty array (as second arg) will only call effect on initial render...
@@ -30,7 +31,7 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar user={user} />
     </div>
     
   );

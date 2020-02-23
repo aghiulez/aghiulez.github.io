@@ -17,7 +17,8 @@
 
 // export default Navbar;
 
-
+import Home from '../Home/home.js'
+import About from '../About/about.js'
 import './styles.css';
 
 import React, { Component } from "react";
@@ -25,25 +26,27 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  BrowserRouter
 } from "react-router-dom";
 
 
-export default function App() {
+const navbar = ({user}) =>  {
+  console.log('nava');
   return (
     <Router>
       <div>
         <nav>
           
-          <div class = "topnav">
+          <div className = "topnav">
             
-            <Link class="AraMatthew" to="/">AraMatthew</Link>
+            <Link className="AraMatthew" to="/">AraMatthew</Link>
           
 
-            <Link class="links" to="/contact">Contact</Link> 
-            <Link class="links" to="/experience">Experience</Link>              
-            <Link class="links" to="/projects">Projects</Link>
-            <Link class="links" to="/about">About</Link>
+            <Link className="links" to="/contact">Contact</Link> 
+            <Link className="links" to="/experience">Experience</Link>              
+            <Link className="links" to="/projects">Projects</Link>
+            <Link className="links" to="/about">About</Link>
           </div>
         </nav>
 
@@ -52,12 +55,16 @@ export default function App() {
             -----
              <Route exact path="/animals" component={Animals} />
             */}
+ 
+ 
         <Switch>          
           <Route path="/contact">
-            <Contact />
+            <Home />
           </Route>
+            
+          
           <Route path="/about">
-            <About />
+            <About user = {user} />
           </Route>
           <Route path="/projects">
             <Projects />
@@ -69,6 +76,7 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
+
       </div>
     </Router>
   );
@@ -78,26 +86,21 @@ export default function App() {
 
 // make their own components later on.....
 
-function Home() {
-  return <h2>Home</h2>;
-  //return Component = {home};
-}
-
-function Contact() {
-  return <h2>Contact</h2>;
-  //return Component = {home};
-}
 
 
-function About() {
-  return <h2>About</h2>;
-}
+
+
 
 function Projects() {
+  console.log("a project");
   return <h2>Projects</h2>;
 }
 
 function Experience() {
+  console.log("@ experience")
   return <h2>Experience</h2>;
 }
 
+
+
+export default navbar;
