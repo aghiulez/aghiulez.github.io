@@ -12,7 +12,7 @@ import './App.css';
 
 
 
-import pages from './pages'; 
+import Navbar from './components/navigation/Navbar';
 
 
 function App() {
@@ -27,8 +27,12 @@ function App() {
       });
   }, []); //empty array (as second arg) will only call effect on initial render...
   
+
   return (
-    <pages user ={user} />
+    <div>
+      <Navbar />
+    </div>
+    
   );
 }
 
