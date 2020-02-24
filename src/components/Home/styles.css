@@ -1,0 +1,14 @@
+body{
+    background-image: url(../../milky-way-illustration-1169754.jpg);
+    background-image: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 14px 16px;
+
+  }
+
+  .feed {
+    padding: 14px 20px;
+  }

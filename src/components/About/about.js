@@ -4,7 +4,7 @@ const About = ({user}) => {
     console.log("@ about")
     return (
            
-            <h3> ara </h3>
+            <h3 className ='feed'> {user.basics.summary} </h3>
         
     );
 }

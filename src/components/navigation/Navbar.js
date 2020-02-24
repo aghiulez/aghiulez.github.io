@@ -1,21 +1,3 @@
-// import React from 'react';
-// import './styles.css';
-
-// const Navbar = () => {
-
-//   return (
-//     <div class="topnav">
-//       <a class="active" href="/">Home</a>
-//       <a href="/AboutMe">About Me</a>
-//       <a href="/Projects">Projects</a>
-//       <a href="/Contact">Contact</a>
-//     </div>    
-
-//   );
-
-// };
-
-// export default Navbar;
 
 import Home from '../Home/home.js'
 import About from '../About/about.js'
@@ -32,7 +14,7 @@ import {
 
 
 const navbar = ({user}) =>  {
-  console.log('nava');
+
   return (
     <Router>
       <div>
@@ -64,7 +46,7 @@ const navbar = ({user}) =>  {
             
           
           <Route path="/about">
-            <About user = {user} />
+            <About className = "container" user = {user} />
           </Route>
           <Route path="/projects">
             <Projects />
