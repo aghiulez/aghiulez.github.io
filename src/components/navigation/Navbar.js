@@ -1,6 +1,8 @@
+import Projects from '../Projects/Projects.js';
+import Home from '../Home/home.js';
+import About from '../About/about.js';
+import Contact from '../Contact/Contact.js';
 
-import Home from '../Home/home.js'
-import About from '../About/about.js'
 import './styles.css';
 
 import React, { Component } from "react";
@@ -38,26 +40,27 @@ const navbar = ({user}) =>  {
              <Route exact path="/animals" component={Animals} />
             */}
  
- 
-        <Switch>          
-          <Route path="/contact">
-            <Home />
-          </Route>
+        <div className ="curr">
+          <Switch >          
+            <Route path="/contact">
+              <Contact />
+            </Route>
+              
             
-          
-          <Route path="/about">
-            <About className = "container" user = {user} />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/experience">
-            <Experience />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+            <Route path="/about">
+              <About className = "container" user = {user} />
+            </Route>
+            <Route path="/projects">
+              <Projects user = {user}/>
+            </Route>
+            <Route path="/experience">
+              <Experience />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
 
       </div>
     </Router>
@@ -73,10 +76,7 @@ const navbar = ({user}) =>  {
 
 
 
-function Projects() {
-  console.log("a project");
-  return <h2>Projects</h2>;
-}
+
 
 function Experience() {
   console.log("@ experience")
