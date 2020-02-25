@@ -41,6 +41,7 @@ const navbar = ({user}) =>  {
             */}
  
         <div className ="curr">
+        
           <Switch >          
             <Route path="/contact">
               <Contact />
@@ -57,7 +58,7 @@ const navbar = ({user}) =>  {
               <Experience />
             </Route>
             <Route path="/">
-              <Home />
+              <Home user = {user}/>
             </Route>
           </Switch>
         </div>

@@ -36,19 +36,24 @@
 
 
 
-.curr{
-  color: black;
+.curr{  /* this is where each page will be loaded.....*/ 
+  color: white;
   /* display: table-cell; */
-  width: 100px;
-	height: 100px;
-	background-color: red;
+  width: 50%;
+	height: 50%px;
+	/* background-color: red; */
 	
-	position: absolute;
+	/* position: absolute;
 	top:0;
 	bottom: 0;
 	left: 0;
-	right: 0;
-  	
-	margin: auto;
+  right: 0;
+  margin: auto; */
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
   
 }

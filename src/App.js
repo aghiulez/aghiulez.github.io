@@ -15,6 +15,7 @@ import './App.css';
 import Navbar from './components/Navigation/Navbar';
 
 
+
 function App() {
 
   const [user, setUser] = useState(null);  //initial value of user is null 
@@ -32,6 +33,7 @@ function App() {
   return (
     <div className="contanier"> 
       <Navbar user={user} />
+
     </div>
     
   );

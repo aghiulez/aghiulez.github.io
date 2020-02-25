@@ -10,8 +10,8 @@ const Contact = () => {
                 <h2>Contact Us</h2>
                 <p>Swing by for a cup of coffee, or leave us a message:</p>
             </div>
-            <div class="row">
-                <div class="column">
+            <div className="row">
+                <div className="column">
                     <form action="/action_page.php">
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
