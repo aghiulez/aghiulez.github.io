@@ -5,7 +5,7 @@ const Projects = ({user}) => {
     console.log(user.work)
     return (
            
-            <h3 className ='feed'> {user.basics.summary} </h3>
+            <h3 className ='feed'> projects</h3>
         
     );
 }

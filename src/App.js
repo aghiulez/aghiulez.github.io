@@ -7,11 +7,9 @@ import React from 'react';
 //which we’ll build in the upcoming sections.
 import { useState, useEffect } from 'react'; 
 
-//import logo from './logo.svg';
-import './App.css';
 
 
-
+import localUser from './ifilter/myInfo.json';
 import Navbar from './components/Navigation/Navbar';
 
 
@@ -20,6 +18,7 @@ function App() {
 
   const [user, setUser] = useState(null);  //initial value of user is null 
   useEffect(() => {
+
     // NOTE: Use your username below
     fetch('https://gitconnected.com/v1/portfolio/aghiulez') // returns a promise containing the response 
       .then(res => res.json())
@@ -32,8 +31,7 @@ function App() {
 
   return (
     <div className="contanier"> 
-      <Navbar user={user} />
-
+      <Navbar user={localUser} /* should be {user} later on */ />
     </div>
     
   );

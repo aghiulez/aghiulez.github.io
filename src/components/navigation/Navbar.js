@@ -3,7 +3,7 @@ import Home from '../Home/home.js';
 import About from '../About/about.js';
 import Contact from '../Contact/Contact.js';
 
-import './styles.css';
+
 
 import React, { Component } from "react";
 import {
@@ -18,6 +18,7 @@ import {
 const navbar = ({user}) =>  {
 
   return (
+    <section id="navbar">
     <Router>
       <div>
         <nav>
@@ -65,6 +66,7 @@ const navbar = ({user}) =>  {
 
       </div>
     </Router>
+    </section>
   );
 }
 

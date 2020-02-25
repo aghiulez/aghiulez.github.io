@@ -1,0 +1,151 @@
+
+/* ===================================================================== */
+/*   Layout Stylesheet
+/* ===================================================================== 
+
+   Table Of Contents:
+   a. General
+   b. Navbar
+   c. Home
+   d. About
+
+
+/* ===================================================================== */
+
+
+/* ------------------------------------------------------------------ */
+/* a. General
+/* ------------------------------------------------------------------ */
+
+body{   /* why does body do the trick buy container doesnt */
+   background-color: black;  
+   padding: 14px 16px;  
+   color: white;  /*all text is white */
+   font-family: monospace;
+ }
+
+/* ------------------------------------------------------------------ */
+/* b. navbar
+/* ------------------------------------------------------------------ */
+
+
+
+/* Add a black background color to the top navigation */
+#navbar .topnav {
+   font-family: monospace;
+   /* background-color: #e3e3e3; */
+   overflow: hidden;
+   border: 2px solid rgb(255, 255, 255);
+   border-radius: 15px;
+ }
+ 
+/* Style the links inside the navigation bar */
+#navbar .topnav .links {
+ float: right;
+ color: #ffffff;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 18px;
+}
+
+/* Change the color of links on hover */
+#navbar .topnav .links:hover {
+ font-size:24px;
+}
+
+
+
+
+
+#navbar .topnav .AraMatthew {
+   text-decoration: none;
+   padding: 10px 12px;
+   color: #ffffff;
+   float: left;
+   font-size: 32px;
+}
+
+
+
+/* #navbar .curr{  
+ color: white;
+ width: 50%;
+ height: 50%px;
+
+ 
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ 
+} */
+
+
+/* ------------------------------------------------------------------ */
+/* d. home
+/* ------------------------------------------------------------------ */
+
+
+
+
+#home .inner {
+   font-size: xx-large;
+   text-align: center;
+   font-family: monospace;
+   margin-left: auto;
+   margin-right: auto;
+   /* width: 400px; */
+
+
+   width: 50%;
+   height: 50%px;
+  
+   
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+ }
+ 
+
+
+/* ------------------------------------------------------------------ */
+/* d. About
+/* ------------------------------------------------------------------ */
+#about .row{
+   padding: 50px 150px;
+   display: flex;
+
+   flex-wrap: nowrap;
+   align-content: stretch;
+
+  
+}
+#about .profile-pic {
+      
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 30%;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 2px;
+    
+    
+ 
+ }
+
+
+ #about .feed{
+    padding: 14px;
+    font-family: monospace;
+    
+ }
+
+ #about h1{
+    font-size: x-large;
+ }
+ #about p{
+   font-size: large;
+}

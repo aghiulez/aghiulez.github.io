@@ -1,9 +1,0 @@
-/* .container {
-  background-color: black;
-} */
-
-body{   /* why does body do the trick buy container doesnt */
-  background-color: black;
-  padding: 14px 16px;  
-  color: white;
-}
