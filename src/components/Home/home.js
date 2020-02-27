@@ -15,7 +15,7 @@ const Home = ({user}) => {
             <ul className = "socialLinks">
                 <SocialIcon url="http://github.com/aghiulez" target="_blank" style={{ height: 75, width: 75 }} bgColor="#ffffff" />
                 <span>   </span>
-                <SocialIcon url="http://linkedin.com/in/aramatthew" target="_blank" style={{ height: 75, width: 75 }}/>
+                <SocialIcon url="http://linkedin.com/in/aramatthew" target="_blank" style={{ height: 75, width: 75 }} bgColor="#5DBCD2"/>
             </ul>
             
         </div>

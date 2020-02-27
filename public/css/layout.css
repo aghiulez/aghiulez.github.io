@@ -34,7 +34,9 @@ body{   /* why does body do the trick buy container doesnt */
 body a{
    text-decoration: none;
    color: white;
+
 }
+
  
 
 /* ------------------------------------------------------------------ */
@@ -97,6 +99,10 @@ body a{
  
 }
 
+#navbar .boldBlue{
+   color: #5DBCD2;
+}
+
 
 /* ------------------------------------------------------------------ */
 /* c. home
@@ -135,9 +141,11 @@ body a{
 }
 #about .profile-pic {
 
+   border: 2px solid white;
    align-self: stretch;
    height: 250px;
    margin-right: 20px;
+   border-radius: 20px;
 
  
  }
@@ -192,10 +200,15 @@ body a{
    
 } 
 
+#projects .project:hover{
+   color: pink;
+   background-color: yellow;
+}
+
 
 
 /* ------------------------------------------------------------------ */
-/* e. projects
+/* f. experience
 /* ------------------------------------------------------------------ */
 
 

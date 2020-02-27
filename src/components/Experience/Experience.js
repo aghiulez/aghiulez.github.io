@@ -8,11 +8,11 @@ const Projects = ({user}) => {
         <section id="projects">
         <div className="flexbox">
             
-            {user.projects.map(project => (
-                <a href={project.githubUrl} target="_blank" key={project.name} > 
+            {user.work.map(work => (
+                <a href={work.website} target="_blank" key={work.company} > 
                     <div className = "project" >
-                        <h1> {project.name} </h1>
-                        <p>{project.summary}</p>
+                        <h1> {work.position} </h1>
+                        <p>{work.company}</p>
                     </div>
                 </a>
             ))}

@@ -2,6 +2,7 @@ import Projects from '../Projects/Projects.js';
 import Home from '../Home/home.js';
 import About from '../About/about.js';
 import Contact from '../Contact/Contact.js';
+import Experience from '../Experience/Experience.js';
 
 
 
@@ -24,7 +25,7 @@ const navbar = ({user}) =>  {
           
           <div className = "topnav">
             
-            <Link className="AraMatthew" to="/">AraMatthew</Link>
+            <Link className="AraMatthew" to="/">Ara<span className = 'boldBlue'>Matthew</span></Link>
           
 
             <Link className="links" to="/contact">Contact</Link> 
@@ -55,7 +56,7 @@ const navbar = ({user}) =>  {
               <Projects user = {user}/>
             </Route>
             <Route path="/experience">
-              <Experience />
+              <Experience user = {user}/>
             </Route>
             <Route path="/">
               <Home user = {user}/>
@@ -80,10 +81,6 @@ const navbar = ({user}) =>  {
 
 
 
-function Experience() {
-  console.log("@ experience")
-  return <h2>Experience</h2>;
-}
 
 
 
