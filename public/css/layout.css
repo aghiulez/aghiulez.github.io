@@ -135,6 +135,7 @@ body a{
    transform: translateX(-50%);
 
    display: flex;
+  
    flex-direction: row;
 
   
@@ -143,7 +144,7 @@ body a{
 
    border: 2px solid white;
    align-self: stretch;
-   height: 250px;
+   height: 300px;
    margin-right: 20px;
    border-radius: 20px;
 
@@ -213,3 +214,46 @@ body a{
 
 
 
+
+
+/* ------------------------------------------------------------------ */
+/* g. contact
+/* ------------------------------------------------------------------ */
+
+
+
+#contact{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   
+}
+
+#contact .prompts{
+   display: flex;
+
+   flex-direction: row;
+   padding: 14px;
+   border: 2px solid white;
+}
+
+#contact .labels{
+   display: flex;
+   flex-direction: column;
+   padding-right: 14px;
+   justify-content: flex-start;
+
+}
+
+#contact .inputs{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+
+
+}
+
+#contact .submit{
+   text-align: center;
+}
