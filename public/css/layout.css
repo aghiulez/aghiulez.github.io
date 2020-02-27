@@ -20,9 +20,22 @@
 body{   /* why does body do the trick buy container doesnt */
    background-color: black;  
    padding: 14px 16px;  
-   color: white;  /*all text is white */
-   font-family: monospace;
+   color: white; 
+
+
+
  }
+
+ #root {
+    font-family: monospace;
+    
+ }
+
+body a{
+   text-decoration: none;
+   color: white;
+}
+ 
 
 /* ------------------------------------------------------------------ */
 /* b. navbar
@@ -32,7 +45,7 @@ body{   /* why does body do the trick buy container doesnt */
 
 /* Add a black background color to the top navigation */
 #navbar .topnav {
-   font-family: monospace;
+   /* font-family: monospace; */
    /* background-color: #e3e3e3; */
    overflow: hidden;
    border: 2px solid rgb(255, 255, 255);
@@ -42,10 +55,9 @@ body{   /* why does body do the trick buy container doesnt */
 /* Style the links inside the navigation bar */
 #navbar .topnav .links {
  float: right;
- color: #ffffff;
  text-align: center;
  padding: 14px 16px;
- text-decoration: none;
+
  font-size: 18px;
 }
 
@@ -68,22 +80,26 @@ body{   /* why does body do the trick buy container doesnt */
 
 
 
-/* #navbar .curr{  
- color: white;
- width: 50%;
- height: 50%px;
+#navbar .curr{  
+   margin-left: auto;
+   margin-right: auto;
 
+
+
+   width: 50%;
+   height: 50%;
+  
+   
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
  
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- 
-} */
+}
 
 
 /* ------------------------------------------------------------------ */
-/* d. home
+/* c. home
 /* ------------------------------------------------------------------ */
 
 
@@ -92,21 +108,6 @@ body{   /* why does body do the trick buy container doesnt */
 #home .inner {
    font-size: xx-large;
    text-align: center;
-   font-family: monospace;
-   margin-left: auto;
-   margin-right: auto;
-   /* width: 400px; */
-
-
-   width: 50%;
-   height: 50%px;
-  
-   
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   
  }
  
 
@@ -114,38 +115,88 @@ body{   /* why does body do the trick buy container doesnt */
 /* ------------------------------------------------------------------ */
 /* d. About
 /* ------------------------------------------------------------------ */
-#about .row{
-   padding: 50px 150px;
-   display: flex;
 
-   flex-wrap: nowrap;
-   align-content: stretch;
+
+
+#about .row{
+   
+   
+   width: 700px;
+
+   /* centered in parent element */
+   position: relative; 
+   left: 50%;
+   transform: translateX(-50%);
+
+   display: flex;
+   flex-direction: row;
 
   
 }
 #about .profile-pic {
-      
-    position: relative;
-    width: 220px;
-    height: 220px;
-    border-radius: 30%;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 2px;
-    
-    
+
+   align-self: stretch;
+   height: 250px;
+   margin-right: 20px;
+
  
  }
 
 
  #about .feed{
-    padding: 14px;
-    font-family: monospace;
-    
+    align-self: stretch;
+    font-size: larger;
+
  }
 
  #about h1{
-    font-size: x-large;
+    margin: 0;
+    font-size: larger;
  }
- #about p{
-   font-size: large;
+
+
+
+/* ------------------------------------------------------------------ */
+/* e. projects
+/* ------------------------------------------------------------------ */
+
+
+
+#projects .flexbox{
+ 
+   display: flex;
+   flex-direction: row;
+
+   /* justify-content: space-between; */
+   align-items: flex-start;
+   flex-wrap: wrap;
+
+
+   font-size: xx-large;
+   text-align: center;
+
+
+
+
 }
+
+#projects .project{
+   height: 250px;
+   width: 250px;
+   border: 2px solid;
+   border-radius: 10%;
+   border-color: white;
+   padding: 20px 20px;
+   margin: 10px;
+
+   
+} 
+
+
+
+/* ------------------------------------------------------------------ */
+/* e. projects
+/* ------------------------------------------------------------------ */
+
+
+

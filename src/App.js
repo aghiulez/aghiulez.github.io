@@ -23,17 +23,18 @@ function App() {
     fetch('https://gitconnected.com/v1/portfolio/aghiulez') // returns a promise containing the response 
       .then(res => res.json())
       .then(user => {
-        console.log(user.basics)
         setUser(user);
       });
   }, []); //empty array (as second arg) will only call effect on initial render...
   
 
   return (
-    <div className="contanier"> 
-      <Navbar user={localUser} /* should be {user} later on */ />
-    </div>
-    
+    <section id ="all">
+      <div className="ALLcontanier"> 
+        <Navbar user={localUser} /* should be {user} later on */ />
+      </div>
+    </section>
+
   );
 }
 

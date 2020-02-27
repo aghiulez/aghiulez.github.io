@@ -1,12 +1,24 @@
 import React from 'react';
 
+
 const Projects = ({user}) => {
-    console.log("@ about")
-    console.log(user.work)
     return (
-           
-            <h3 className ='feed'> projects</h3>
-        
+
+
+        <section id="projects">
+        <div className="flexbox">
+            
+            {user.projects.map(project => (
+                <a href={project.githubUrl} key={project.name} > 
+                    <div className = "project" >
+                        <h1> {project.name} </h1>
+                        <p>{project.summary}</p>
+                    </div>
+                </a>
+            ))}
+
+        </div>
+        </section>
     );
 }
 

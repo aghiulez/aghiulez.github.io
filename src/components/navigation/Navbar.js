@@ -5,13 +5,12 @@ import Contact from '../Contact/Contact.js';
 
 
 
-import React, { Component } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  BrowserRouter
 } from "react-router-dom";
 
 
