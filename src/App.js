@@ -30,9 +30,9 @@ function App() {
 
   return (
     <section id ="all">
-      <div className="ALLcontanier"> 
+
         <Navbar user={localUser} /* should be {user} later on */ />
-      </div>
+
     </section>
 
   );

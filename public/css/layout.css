@@ -43,7 +43,10 @@ body a{
 /* b. navbar
 /* ------------------------------------------------------------------ */
 
-
+#navbar .viewPage{
+   display: flex;
+   flex-direction: column;
+}
 
 /* Add a black background color to the top navigation */
 #navbar .topnav {
@@ -255,5 +258,6 @@ body a{
 }
 
 #contact .submit{
+   padding: 14px;
    text-align: center;
 }

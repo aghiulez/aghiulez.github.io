@@ -20,7 +20,7 @@ const navbar = ({user}) =>  {
   return (
     <section id="navbar">
     <Router>
-      <div>
+      <div className='viewPage'>
         <nav>
           
           <div className = "topnav">
