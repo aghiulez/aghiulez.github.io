@@ -10,7 +10,7 @@
     "yearsOfExperience": 1,
     "id": "d9f36cb7-badb-4150-a80b-6d2eb11b775c",
     "username": "aghiulez",
-    "karma": 12,
+    "karma": 15,
     "email": "aghiulezian@gmail.com",
     "region": "Los Angeles",
     "location": {
@@ -79,7 +79,7 @@
     {
       "name": "rehabaseal",
       "displayName": "RehabASeal",
-      "summary": "An application developed for the Pacific Marine Mammal Center",
+      "summary": "An application developed for the Pacific Marine Mammal Center: ",
       "website": "https://www.pacificmmc.org/",
       "githubUrl": "https://github.com/aghiulez/RehabASeal",
       "primaryLanguage": "C#",
@@ -99,7 +99,7 @@
     {
       "name": "maze",
       "displayName": "Maze",
-      "summary": "Maze generator & solver program using the DFS algorithm",
+      "summary": "Maze Generator/Solver program developed using the DFS algorithm",
       "website": "",
       "githubUrl": "https://github.com/aghiulez/Maze",
       "primaryLanguage": "Java",
@@ -119,16 +119,16 @@
     {
       "name": "zipcodesearch",
       "displayName": "ZipcodeSearch",
-      "summary": "Simple zipcode searching web-app",
+      "summary": "Web application that optimizes the use of Typescript, Docker, and ArangoDB",
       "website": "",
       "githubUrl": "https://github.com/aghiulez/ZipcodeSearch",
       "primaryLanguage": "JavaScript",
       "languages": [
-        "JavaScript",
         "HTML",
         "CSS",
         "Dockerfile",
-        "TypeScript"
+        "TypeScript",
+        "JavaScript"
       ],
       "libraries": [
         
@@ -143,14 +143,14 @@
     {
       "name": "myportfolio",
       "displayName": "myPortfolio",
-      "summary": "My online developer-portfolio",
+      "summary": "My online developer-portfolio to showcase my experience",
       "website": "https://www.aramatthew.com",
       "githubUrl": "https://github.com/aghiulez/myPortfolio",
       "primaryLanguage": "JavaScript",
       "languages": [
-        "CSS",
         "HTML",
-        "JavaScript"
+        "JavaScript",
+        "CSS"
       ],
       "libraries": [
         
@@ -165,7 +165,7 @@
     {
       "name": "boardgames",
       "displayName": "BoardGames",
-      "summary": "An interactive board game environment",
+      "summary": "BoardGame Environment developed using JavaFX",
       "website": "",
       "githubUrl": "https://github.com/aghiulez/BoardGames",
       "primaryLanguage": "Java",
@@ -202,7 +202,7 @@
         "month": 2
       },
       "highlights": [
-        
+        "https://media-exp1.licdn.com/dms/image/C560BAQE6v42UxmJePw/company-logo_200_200/0?e=1591228800&v=beta&t=y3lTwtyWHWOK297kBpPb-xYjvhelXA4Go3iO3tu9mP8"
       ]
     },
     {
@@ -223,7 +223,7 @@
         "month": 10
       },
       "highlights": [
-        
+        "https://media-exp1.licdn.com/dms/image/C4D0BAQF1mN96QI1s2A/company-logo_200_200/0?e=1591228800&v=beta&t=J3jGLw0OEwR9Jijlo8mLqkrzWfHEc-PCnu_GFNbVDKE"
       ]
     },
     {
@@ -244,7 +244,7 @@
         "month": 9
       },
       "highlights": [
-        
+        "https://media-exp1.licdn.com/dms/image/C560BAQEjzxdA4RUnWQ/company-logo_200_200/0?e=1591228800&v=beta&t=i7BEuooI00FJhvV-W1lv-fr-COfwaSxqDMNA8_mtNhQ"
       ]
     }
   ],
