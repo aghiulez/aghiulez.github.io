@@ -1,3 +1,4 @@
+
 {
   "basics": {
     "name": "Ara Matthew ",
@@ -10,7 +11,7 @@
     "yearsOfExperience": 1,
     "id": "d9f36cb7-badb-4150-a80b-6d2eb11b775c",
     "username": "aghiulez",
-    "karma": 16,
+    "karma": 17,
     "email": "aghiulezian@gmail.com",
     "region": "Los Angeles",
     "location": {
@@ -191,7 +192,7 @@
       "position": "Software Engineering Intern",
       "website": "https://www.gruv.me/",
       "location": "Yerevan, Armenia",
-      "summary": "",
+      "summary": "Worked with an established team of software professionals and interacted with product managers, the marketing team, and designers on a daily basis",
       "isCurrentRole": false,
       "startDate": "2019-11-01",
       "endDate": "2020-02-01",
@@ -212,7 +213,7 @@
       "position": "Panel Coordinator",
       "website": "https://wcit2019.org/",
       "location": "Yerevan Armenia",
-      "summary": "",
+      "summary": "Served as an effective communication link between eight industry professionals visiting Armenia for the World\nConference of Information Technology",
       "isCurrentRole": false,
       "startDate": "2019-09-01",
       "endDate": "2019-10-01",
@@ -233,7 +234,7 @@
       "position": "Python Workshop Instructor",
       "website": "http://www.g-tea.am/?lang=en",
       "location": "Gyumri, Armenia",
-      "summary": "",
+      "summary": "Taught a 2 hour daily Python course to a classroom of 10 students from novice to intermediate levels of programming",
       "isCurrentRole": false,
       "startDate": "2019-08-01",
       "endDate": "2019-09-01",

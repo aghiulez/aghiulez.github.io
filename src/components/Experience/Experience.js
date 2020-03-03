@@ -18,14 +18,13 @@ const Projects = ({user}) => {
                 <a href={work.website} className="link" target="_blank"  key={work.company}> 
 
                     <h1 className='position'> {work.position} </h1>
-                    <div className = "project"  
-                    style={
-                        {
-                            background:   `url(${work.highlights[0]}) no-repeat`,
-                            backgroundSize: 'cover'
-                        }
-                            }
-                            >
+                    <div className = "project">
+
+                    <img className ="gif" src={work.highlights[0]} className='workImg'></img>
+
+                                        
+                                            
+                    <p>{work.summary}</p>
 
                         <div className='info'>
                             {/* <h1> {work.position} </h1> */}

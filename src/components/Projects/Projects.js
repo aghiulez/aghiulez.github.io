@@ -12,12 +12,19 @@ const Projects = ({user}) => {
                 <a href={project.githubUrl} target="_blank" key={project.name} > 
                     <div className = "project" >
 
-                        <h1> {project.name} </h1>
+                        <h1 className='projName'> {project.name} </h1>
                         <img className ="gif" src={project.website} className='gif'></img>
 
                     
                         
                         <p>{project.summary}</p>
+                        <div className ="lang">
+                            {/* {project.languages.map(language => (
+                                
+                                    <text>{language}</text>
+                    
+                            ))} */}
+                        </div>
                     </div>
                 </a>
             ))}

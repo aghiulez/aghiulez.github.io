@@ -214,6 +214,7 @@ body a{
    height: 150px;
    width: 200px;
    object-fit: contain;
+   border-radius: 10%;
    
    
 }
@@ -225,18 +226,22 @@ body a{
 
 
 
+
 #projects .project:hover p{
    /* font-size: large; */
    opacity: 100;
+   vertical-align: middle;
   
 }
 #projects .project:hover .gif{
    /* font-size: large; */
-   visibility: hidden;
+   /* visibility: hidden; */
+   
+   display: none;
 }
 
 #projects .project:hover{
-   background: white;
+   /* background: white; */
    color: #5DBCD2;
    border-color: #5DBCD2;
    
@@ -269,6 +274,24 @@ body a{
 
 }
 
+#experience .project p{
+   opacity: 0;
+   font-size: large;
+}
+
+#experience img{
+   width: 100%;
+   border-radius: 10%;
+}
+
+#experience .project:hover img{
+   display: none;
+}
+#experience .project:hover p{
+   opacity:100;
+}
+
+
 #experience .link{
    display: flex;
    flex-direction: column;
@@ -277,7 +300,7 @@ body a{
 }
 
 #experience .project{
-  
+   overflow: hidden;
    height: 250px;
    width: 250px;
    border: 2px solid;
@@ -288,6 +311,15 @@ body a{
 
    
 } 
+
+#experience .project:hover{
+   color: #5DBCD2;
+   border-color: #5DBCD2;
+
+}
+#experience a:hover{
+   color:#5DBCD2;
+}
 
 #experience .position{
    font-size: large;
