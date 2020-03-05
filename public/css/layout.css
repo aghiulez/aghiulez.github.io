@@ -317,8 +317,9 @@ body a{
    border-color: #5DBCD2;
 
 }
-#experience a:hover{
+#experience a:hover .position{
    color:#5DBCD2;
+   /* font-size: larger; */
 }
 
 #experience .position{

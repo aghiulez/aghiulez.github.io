@@ -1,8 +1,8 @@
-import Projects from '../Projects/Projects.js';
-import Home from '../Home/home.js';
-import About from '../About/about.js';
-import Contact from '../Contact/Contact.js';
-import Experience from '../Experience/Experience.js';
+import Projects from './Projects.js';
+import Home from './home.js';
+import About from './about.js';
+import Contact from './Contact.js';
+import Experience from './Experience.js';
 
 
 

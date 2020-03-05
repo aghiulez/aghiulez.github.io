@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 
 
 import localUser from './ifilter/myInfo.json';
-import Navbar from './components/Navigation/Navbar';
+import Navbar from './components/Navbar';
 
 
 
