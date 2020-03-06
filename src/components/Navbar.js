@@ -26,12 +26,12 @@ const navbar = ({user}) =>  {
           <div className = "topnav">
             
             <Link className="AraMatthew" to="/">Ara<span className = 'boldBlue'>Matthew</span></Link>
-          
+            {/* <h3 className="links" >  Under</h3> */}
 
-            <Link className="links" to="/contact">Contact</Link> 
-            <Link className="links" to="/experience">Experience</Link>              
+             <Link className="links" to="/">Under Construction... Coming Very Soon!</Link> 
+            {/*<Link className="links" to="/experience">Experience</Link>              
             <Link className="links" to="/projects">Projects</Link>
-            <Link className="links" to="/about">About</Link>
+            <Link className="links" to="/about">About</Link> */}
           </div>
         </nav>
 
@@ -44,7 +44,7 @@ const navbar = ({user}) =>  {
         <div className ="curr">
         
           <Switch >          
-            <Route path="/contact">
+            {/* <Route path="/contact">
               <Contact />
             </Route>
               
@@ -57,7 +57,7 @@ const navbar = ({user}) =>  {
             </Route>
             <Route path="/experience">
               <Experience user = {user}/>
-            </Route>
+            </Route> */}
             <Route path="/">
               <Home user = {user}/>
             </Route>
