@@ -102,6 +102,15 @@ body a{
  
 }
 
+
+
+@media only screen and (max-width: 600px) {
+   #navbar .curr{
+      width: 80%;
+   }
+}
+
+
 #navbar .boldBlue{
    color: #5DBCD2;
 }
@@ -119,6 +128,25 @@ body a{
    text-align: center;
  }
  
+#home .socialLinks{
+   /* padding: 14px; */
+   padding-top: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+   #home h1{
+      font-size: xx-large;
+   }
+   #home .inner {
+   /* background-color: lightblue; */
+   font-size: larger;
+   }
+   #home .socialLinks{
+      width: 100%;
+      text-align: center;
+   }
+}
+
 
 
 /* ------------------------------------------------------------------ */
