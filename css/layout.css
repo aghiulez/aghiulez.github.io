@@ -1,24 +1,3 @@
-/*
-Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {...}
-
-Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {...}
-
-Medium devices (landscape tablets, 768px and up)
-@media only screen and (min-width: 768px) {...}
-
-Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {...}
-
-Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {...}
-*/
-
-
-
-
-
 
 /* ===================================================================== */
 /*   Layout Stylesheet
@@ -38,25 +17,14 @@ Extra large devices (large laptops and desktops, 1200px and up)
 /* a. General
 /* ------------------------------------------------------------------ */
 
-
-
-
-
-
 body{   /* why does body do the trick buy container doesnt */
    background-color: black;  
    padding: 14px 16px;  
    color: white; 
+
+
+
  }
-
- @media only screen and (max-width: 600px) {
-   body {
-     /* background-color: lightblue; */
-     /* position: relative; */
-   }
- }
-
-
 
  #root {
     font-family: monospace;
@@ -84,8 +52,6 @@ body a{
 #navbar .topnav {
    /* font-family: monospace; */
    /* background-color: #e3e3e3; */
-   width: 100%;
-
    overflow: hidden;
    border: 2px solid rgb(255, 255, 255);
    border-radius: 15px;
@@ -136,6 +102,15 @@ body a{
  
 }
 
+
+
+@media only screen and (max-width: 600px) {
+   #navbar .curr{
+      width: 80%;
+   }
+}
+
+
 #navbar .boldBlue{
    color: #5DBCD2;
 }
@@ -146,35 +121,31 @@ body a{
 /* ------------------------------------------------------------------ */
 
 
+
+
 #home .inner {
-   width: 100%;
    font-size: xx-large;
    text-align: center;
-
- }
-
- #home .socialLinks{
-    /* padding: 14px; */
-    padding-top: 14px;
  }
  
-
+#home .socialLinks{
+   /* padding: 14px; */
+   padding-top: 14px;
+}
 
 @media only screen and (max-width: 600px) {
    #home h1{
       font-size: xx-large;
    }
    #home .inner {
-     /* background-color: lightblue; */
-     font-size: larger;
+   /* background-color: lightblue; */
+   font-size: larger;
    }
    #home .socialLinks{
       width: 100%;
       text-align: center;
    }
- }
-
-
+}
 
 
 
