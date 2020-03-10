@@ -229,7 +229,7 @@ body a{
    border: 2px solid;
    border-radius: 10%;
    border-color: white;
-   padding: 20px 20px;
+   /* padding: 20px 20px; */
    margin: 10px;
    overflow: visible;
 
