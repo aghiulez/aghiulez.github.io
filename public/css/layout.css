@@ -52,6 +52,7 @@ body{   /* why does body do the trick buy container doesnt */
  @media only screen and (max-width: 600px) {
    body {
      /* background-color: lightblue; */
+     /* position: relative; */
    }
  }
 
@@ -135,9 +136,19 @@ body a{
  
 }
 
+
+@media only screen and (max-width: 600px) {
+   #navbar .curr{
+      width: 80%;
+   }
+}
+
+
 #navbar .boldBlue{
    color: #5DBCD2;
 }
+
+
 
 
 /* ------------------------------------------------------------------ */
@@ -153,7 +164,8 @@ body a{
  }
 
  #home .socialLinks{
-    padding: 14px;
+    /* padding: 14px; */
+    padding-top: 14px;
  }
  
 
@@ -167,6 +179,7 @@ body a{
      font-size: larger;
    }
    #home .socialLinks{
+      width: 100%;
       text-align: center;
    }
  }
