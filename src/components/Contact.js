@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <section id="contact">
             <h1 className='title'> Get in touch with me!</h1>
-            <form  className='contactForm' action='' method="post">
+            <form  className='contactForm' action='' method="get">
                 <div className='prompts'>
 
                     <div className='labels'>

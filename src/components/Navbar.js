@@ -28,7 +28,7 @@ const navbar = ({user}) =>  {
             <Link className="AraMatthew" to="/">Ara<span className = 'boldBlue'>Matthew</span></Link>
           
 
-            <Link className="links" to="/contact">Contact</Link> 
+            {/* <Link className="links" to="/contact">Contact</Link>  */}
             <Link className="links" to="/experience">Experience</Link>              
             <Link className="links" to="/projects">Projects</Link>
             <Link className="links" to="/about">About</Link>
