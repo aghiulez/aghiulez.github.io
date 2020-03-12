@@ -17,10 +17,16 @@
 /* a. General
 /* ------------------------------------------------------------------ */
 
+
+html, body{
+   height: 100%;
+}
+
 body{   /* why does body do the trick buy container doesnt */
    background-color: black;  
    padding: 14px 16px;  
    color: white; 
+  
 
 
 
@@ -436,8 +442,17 @@ body a{
    #home .inner {
    /* background-color: lightblue; */
    font-size: x-large;
+
+   /* add  */
+
+
    }
 
+   #home .socialLinks{
+      /* padding: 14px; */
+
+      
+   }
    /* ------------------------------------------------------------------ */
    /* d. About
    /* ------------------------------------------------------------------ */

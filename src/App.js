@@ -27,12 +27,13 @@ function App() {
       });
   }, []); //empty array (as second arg) will only call effect on initial render...
   
-
+  
   return (
     <section id ="all">
 
-        <Navbar user={localUser} /* should be {user} later on */ />
-
+         <Navbar user={localUser}/>
+        
+        
     </section>
 
   );
