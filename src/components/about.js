@@ -5,7 +5,7 @@ const About = ({user}) => {
     return (
             <section id="about">
             <div className="row">
-                <img className="profile-pic"  src={user.basics.picture} alt="Ara Matthew Profile Pic" />
+                  {/* <img className="profile-pic"  src={user.basics.picture} alt="Ara Matthew Profile Pic" /> */}
                 
                 <div className ='feed'> 
                     <h1>Let me tell you a little something about myself...</h1>
