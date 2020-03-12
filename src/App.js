@@ -29,13 +29,7 @@ function App() {
   
   
   return (
-    <section id ="all">
-
-         <Navbar user={localUser}/>
-        
-        
-    </section>
-
+    <Navbar user={localUser}/>
   );
 }
 

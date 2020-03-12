@@ -19,29 +19,27 @@ import {
 const navbar = ({user}) =>  {
 
   return (
-    <section id="navbar">
+
     <Router>
-      <div className='viewPage'>
+
         <nav>
           
-          <div className = "topnav">
             
             <Link className="AraMatthew" to="/">Ara<span className = 'boldBlue'>Matthew</span></Link>
           
 
             {/* <Link className="links" to="/contact">Contact</Link>   */}
-            <Link className="links" to="/experience">Experience</Link>              
-            <Link className="links" to="/projects">Projects</Link>
-            <Link className="links" to="/about">About</Link>
-          </div>
+            <div className = "links">
+              <Link to="/about">About</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/experience">Experience</Link>              
+
+            </div>
+
+
         </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. 
-            -----
-             <Route exact path="/animals" component={Animals} />
-            */}
- 
+
         <div className ="curr">
         
           <Switch >          
@@ -65,17 +63,11 @@ const navbar = ({user}) =>  {
           </Switch>
         </div>
 
-      </div>
+
     </Router>
-    </section>
+
   );
 }
-
-
-
-// make their own components later on.....
-
-
 
 
 
