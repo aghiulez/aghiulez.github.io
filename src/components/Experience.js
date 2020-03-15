@@ -11,7 +11,7 @@ const Projects = ({user}) => {
 
 
         <section id="experience">
-        <div className="flexbox">
+
             
             {user.work.map(work => (
                 
@@ -35,7 +35,7 @@ const Projects = ({user}) => {
                 </a>
             ))}
 
-        </div>
+
         </section>
     );
 }

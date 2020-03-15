@@ -6,7 +6,7 @@ const Projects = ({user}) => {
 
 
         <section id="projects">
-        <div className="flexbox">
+
             
             {user.projects.map(project => (
                 <a href={project.githubUrl} target="_blank" key={project.name} > 
@@ -29,7 +29,7 @@ const Projects = ({user}) => {
                 </a>
             ))}
 
-        </div>
+
         </section>
     );
 }

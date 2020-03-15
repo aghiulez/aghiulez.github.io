@@ -34,7 +34,9 @@ body{   /* why does body do the trick buy container doesnt */
 
  #root {
     font-family: monospace;
-    
+    display: flex;
+    flex-direction: column;
+
  }
 
 body a{
@@ -56,7 +58,6 @@ nav {
    display: flex;
    flex-direction: row;
 
-   overflow: hidden;
    border: 2px solid rgb(255, 255, 255);
    border-radius: 15px;
 
@@ -102,23 +103,13 @@ nav .AraMatthew {
 
 
 .curr{  
-   /* overflow: auto; */
-   margin-left: auto;
-   margin-right: auto;
 
-   position: absolute;
-   align-items: center;
+   display: flex;
    justify-content: center;
-
-   width: 80%;
-   height: 50%;
-  
    
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+   height: 100%;
  
+
 }
 
 
@@ -134,14 +125,18 @@ nav .boldBlue{
 /* c. home
 /* ------------------------------------------------------------------ */
 
-
-
-
-#home .inner {
+#home{
+   width: 80%;
+   align-self: baseline;
+   margin-top: 150px;
+   
    font-size: xx-large;
    text-align: center;
- }
- 
+
+}
+
+
+
 #home .socialLinks{
    /* padding: 14px; */
    padding-top: 14px;
@@ -201,8 +196,8 @@ nav .boldBlue{
 
 
 
-#projects .flexbox{
-   position: relative;
+#projects{
+
  
    display: flex;
    flex-direction: row;
@@ -213,7 +208,7 @@ nav .boldBlue{
    flex-wrap: wrap;
 
 
-   font-size: xx-large;
+   /* font-size: xx-large; */
    text-align: center;
 
 
@@ -233,6 +228,7 @@ nav .boldBlue{
    /* padding: 20px 20px; */
    margin: 10px;
    overflow: visible;
+
 
 
    
@@ -283,7 +279,7 @@ nav .boldBlue{
 /* ------------------------------------------------------------------ */
 
 
-#experience .flexbox{
+#experience {
  
    display: flex;
    flex-direction: row;
@@ -335,7 +331,7 @@ nav .boldBlue{
    border: 2px solid;
    border-radius: 10%;
    border-color: white;
-   padding: 20px 20px;
+   /* padding: 20px 20px; */
    margin: 10px;
 
    
@@ -437,6 +433,7 @@ nav .boldBlue{
    nav {
       display: flex;
       flex-direction: column;
+
    }
 
    nav .links{
@@ -458,17 +455,16 @@ nav .boldBlue{
    /* ------------------------------------------------------------------ */
    /* c. Home
    /* ------------------------------------------------------------------ */
+   
+   #home{
+      margin-top:0px;
+      font-size: x-large;
+   }
+   
    #home h1{
       font-size: xx-large;
    }
-   #home .inner {
-   /* background-color: lightblue; */
-   font-size: x-large;
 
-   /* add  */
-
-
-   }
 
    #home .socialLinks{
       /* padding: 14px; */
@@ -479,7 +475,10 @@ nav .boldBlue{
    /* d. About
    /* ------------------------------------------------------------------ */
 
-   #about .row{
+   
+
+
+   #about {
    
    
       width: auto;
@@ -499,7 +498,7 @@ nav .boldBlue{
    #about .profile-pic{
       order: 1;
    }
-   #about .feed{
+   #about .bio{
       margin-top: 10px;
       font-size: medium;
    }
