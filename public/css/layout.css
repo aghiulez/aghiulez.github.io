@@ -18,13 +18,24 @@
 /* ------------------------------------------------------------------ */
 
 
-html, body, #root{
+/* html, body, #root{
+
+  
+   height: max-content;
+   
+  
+} */
+html{
    height: 100%;
 }
+html, body, #root{
+   min-height: 100%;
+}
+
 
 body{   /* why does body do the trick buy container doesnt */
    background-color: black;  
-   padding: 14px 16px;  
+   /* padding: 14px 16px;   */
    color: white; 
   
 
@@ -33,9 +44,10 @@ body{   /* why does body do the trick buy container doesnt */
  }
 
  #root {
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
+    
 
  }
 
@@ -45,7 +57,69 @@ body a{
 
 }
 
+.curr{  
+
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   padding-bottom: 50px;
+   
+
  
+
+}
+
+Footer{
+   display: flex;
+   justify-content: space-between;
+   position: fixed; /* instead of absolute */
+   bottom: 0;
+   padding-left: 5px;
+   width: 100%;
+   height: 50px;
+   background-color: black;
+   border-top: 2px solid white;
+   
+}
+
+.socialLinks{
+   
+   padding: 14px;
+
+   
+}
+
+
+.pageSummary{
+   display:flex;
+   justify-content: center;
+
+   
+   background-color: rgb(19, 34, 38);
+   /* width: 100%; */
+   padding: 32px;
+   border-bottom: 2px solid #ffffff; 
+}
+.pageSummary .container{
+   display: flex;
+   align-items: center;
+   flex-direction: column;  
+   max-width: 608px;
+   font-size: 1.25rem;
+}
+.pageSummary .container img{
+
+   width: 100px;
+   height: 100px;
+   background-color: white;
+   border-radius: 50%;
+   padding: 2px;
+}
+
+.pageSummary .container h1{
+   margin: 0;
+   font-size: 3rem;
+}
 
 /* ------------------------------------------------------------------ */
 /* b. navbar
@@ -58,8 +132,9 @@ nav {
    display: flex;
    flex-direction: row;
 
-   border: 2px solid rgb(255, 255, 255);
-   border-radius: 15px;
+   border-bottom: 2px solid rgb(255, 255, 255);
+   /* border-radius: 15px; */
+   align-content: center;
 
 }
 nav .dropbtn {
@@ -95,55 +170,50 @@ nav .links a{
 
 
 nav .AraMatthew {
+   align-self: center;
    text-decoration: none;
    padding: 10px 12px;
    color: #ffffff;
    float: left;
    font-size: 32px;
+
    
 }
 
 
 
-.curr{  
 
-   display: flex;
-   justify-content: center;
-   
-   height: 100%;
- 
-
-}
 
 
 
 
 
 nav .boldBlue{
-   color: #5DBCD2;
+   font-size: larger;
+   color: rgb(19, 34, 38);
+   background-color: white;
 }
-
 
 /* ------------------------------------------------------------------ */
 /* c. home
 /* ------------------------------------------------------------------ */
 
 #home{
-   width: 80%;
+  
    align-self: baseline;
    margin-top: 150px;
    
    font-size: xx-large;
    text-align: center;
+   margin-left: 150px;
+   margin-right: 150px;
 
 }
 
 
 
-#home .socialLinks{
-   /* padding: 14px; */
-   padding-top: 14px;
-}
+
+
 
 
 /* ------------------------------------------------------------------ */
@@ -152,9 +222,9 @@ nav .boldBlue{
 
 
 
-#about .row{
+#about{
    
-   
+   margin: 20px;
    width: 700px;
 
    /* centered in parent element */
@@ -182,15 +252,16 @@ nav .boldBlue{
 
  #about .feed{
     align-self: stretch;
-    font-size: larger;
-
+    font-size: x-large;
  }
 
  #about h1{
     margin: 0;
-    font-size: larger;
+    font-size: xx-large;
  }
-
+#about p{
+   font-size: 1rem;
+}
 
 
 /* ------------------------------------------------------------------ */
@@ -199,80 +270,75 @@ nav .boldBlue{
 
 
 
-#projects{
+#projectspage{
 
- 
+   width: 100%;
+   height: auto;
    display: flex;
-   flex-direction: row;
-   justify-content: center;
-
-   /* justify-content: space-between; */
-   align-items: flex-start;
-   flex-wrap: wrap;
-
-
-   /* font-size: xx-large; */
-   text-align: center;
-
-
-
-
-}
-
-#projects .project{
-   /* background: url("https://media.giphy.com/media/gU25raLP4pUu4/giphy.gif") no-repeat; */
-   /* background-size: cover; */
-   /* opacity: 0; */
-   height: 250px;
-   width: 250px;
-   border: 2px solid;
-   border-radius: 10%;
-   border-color: white;
-   /* padding: 20px 20px; */
-   margin: 10px;
-   overflow: visible;
-
-
-
-   
-} 
-
-#projects .project .gif{
-   opacity: 100;
-   height: 150px;
-   width: 200px;
-   object-fit: contain;
-   border-radius: 10%;
-   
-   
-}
-
-#projects .project p{
-   font-size: large;
-   opacity: 0;
-}
-
-
-
-
-#projects .project:hover p{
-   /* font-size: large; */
-   opacity: 100;
-   vertical-align: middle;
+   flex-direction: column;
+   align-items:  center;
   
-}
-#projects .project:hover .gif{
-   /* font-size: large; */
-   /* visibility: hidden; */
    
-   display: none;
+
+
+
+
 }
 
-#projects .project:hover{
-   /* background: white; */
-   color: #5DBCD2;
-   border-color: #5DBCD2;
+
+
+#projectspage .project{
+
    
+   max-width: 608px;
+   /* width: min-content; */
+   display: flex;
+   display: row;
+   align-items: flex-start;
+
+
+   padding-top: 32px;
+   padding-bottom: 32px;
+
+
+   border-bottom: 5px solid white;
+   /* border-bottom-style: double; */
+   border-width: 1px;
+   border-spacing: 15px;
+}
+
+#projectspage .project .gif{
+  
+   opacity: 100;
+
+   width: 190px;
+   /* object-fit: contain; */
+   object-fit: cover;
+   border-radius: 10%; 
+
+   padding-left: 16;
+   padding-right: 16px;
+}
+
+#projectspage .project .information{
+
+  
+   display: flex;
+   flex-direction: column;
+   height: auto;
+   /* width: 300px; */
+   margin-left: 14px;
+}
+#projectspage .project .information .projName{
+   font-size: 1.75rem;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#projectspage .project .information text{
+   font-size: .75rem;
+}
+#projectspage .project .information p{
+   font-size: 1rem;
 }
 
 
@@ -281,80 +347,70 @@ nav .boldBlue{
 /* f. experience
 /* ------------------------------------------------------------------ */
 
+#experiencepage{
 
-#experience {
- 
-   display: flex;
-   flex-direction: row;
-
-   /* justify-content: space-between; */
-   align-items: flex-start;
-   flex-wrap: wrap;
-
-
-   font-size: xx-large;
-   text-align: center;
-   justify-content: center;
-
-
-
-
-
-}
-
-#experience .project p{
-   opacity: 0;
-   font-size: large;
-}
-
-#experience img{
    width: 100%;
-   border-radius: 10%;
-}
-
-#experience .project:hover img{
-   display: none;
-}
-#experience .project:hover p{
-   opacity:100;
-}
-
-
-#experience .link{
+   height: auto;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   align-items:  center;
+  
+   
+
+
+
+
 }
 
-#experience .project{
-   overflow: hidden;
-   height: 250px;
-   width: 250px;
-   border: 2px solid;
-   border-radius: 10%;
-   border-color: white;
-   /* padding: 20px 20px; */
-   margin: 10px;
+#experiencepage .link{
 
    
-} 
+   max-width: 608px;
+   /* width: min-content; */
+   display: flex;
+   display: row;
+   align-items: flex-start;
 
-#experience .project:hover{
-   color: #5DBCD2;
-   border-color: #5DBCD2;
 
+   padding-top: 32px;
+   padding-bottom: 32px;
+
+
+   border-bottom: 5px solid white;
+   /* border-bottom-style: double; */
+   border-width: 1px;
+   border-spacing: 15px;
 }
-#experience a:hover .position{
-   color:#5DBCD2;
-   /* font-size: larger; */
+
+#experiencepage .link .gif{
+  
+   opacity: 100;
+
+   /*  */
+   /* object-fit: contain; */
+   /* object-fit: cover; */
+   border-radius: 10%; 
+
+   padding-right: 16px;
 }
 
-#experience .position{
-   font-size: large;
+#experiencepage .link .info{
 
+  
+   display: flex;
+   flex-direction: column;
+   height: auto;
+   /* width: 300px; */
+   margin-left: 14px;
 }
-
+#experiencepage .link .info .position{
+   font-size: 1.75rem;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#experiencepage .link .info p{
+   font-size: 1rem;
+}
 
 
 
@@ -422,8 +478,10 @@ nav .boldBlue{
    /* ------------------------------------------------------------------ */
    /* a. General
    /* ------------------------------------------------------------------ */
-
-
+   .footer{
+      width: 100%;
+   }
+   
    /* ------------------------------------------------------------------ */
    /* b. Navbar
    /* ------------------------------------------------------------------ */
@@ -448,9 +506,7 @@ nav .boldBlue{
       justify-content: space-between;
 
    }
-   .listener {
-      height: 200%;
-   }
+ 
    .active .links{
       display: flex;
       flex-direction: column;
@@ -493,15 +549,17 @@ nav .boldBlue{
       display: block;
      }
 
-   nav .show {display:block;}
-
+     .pageSummary{
+        width: auto;
+        padding: 32px;
+     }
 
    /* ------------------------------------------------------------------ */
    /* c. Home
    /* ------------------------------------------------------------------ */
    
    #home{
-      margin-top:0px;
+      margin:0px;
       font-size: x-large;
    }
    
@@ -510,11 +568,6 @@ nav .boldBlue{
    }
 
 
-   #home .socialLinks{
-      /* padding: 14px; */
-
-      
-   }
    /* ------------------------------------------------------------------ */
    /* d. About
    /* ------------------------------------------------------------------ */
@@ -536,6 +589,7 @@ nav .boldBlue{
       display: flex;
      
       flex-direction: column;
+      margin-left:0;
       
      
    }
@@ -546,4 +600,51 @@ nav .boldBlue{
       margin-top: 10px;
       font-size: medium;
    }
+
+   /* ------------------------------------------------------------------ */
+   /* c. Projects
+   /* ------------------------------------------------------------------ */
+
+   #projectspage .project{
+ 
+      
+      flex-direction: column;
+      border-width: 1px;
+
+   }
+   #projectspage .projects{
+      width: 90%;
+   }
+   
+   #projectspage .project .gif{
+
+      width: 100%;
+      height: auto;
+      padding-bottom: 10px;
+      padding-left: 0;
+
+
+   }
+   /* ------------------------------------------------------------------ */
+   /* c. experience
+   /* ------------------------------------------------------------------ */
+   #experiencepage .link{
+ 
+      width: 90%;
+      flex-direction: column;
+      border-width: 1px;
+
+   }
+   
+   #experiencepage .link .gif{
+
+      width: 100%;
+      height: auto;
+      padding-bottom: 10px;
+      padding-right: 0px;
+
+
+   }
+
+
 }

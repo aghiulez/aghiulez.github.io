@@ -2,6 +2,7 @@
 
 import Navbar from './Navbar.js';
 import Page from './Page.js';
+import Footer from './Footer'
 
 import React from "react";
 import {
@@ -16,6 +17,7 @@ const Active = ({user}) =>  {
       <div className ="curr">
         <Page user = {user}/>
       </div>
+      <Footer />
     </Router> 
   );
 }

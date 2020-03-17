@@ -80,13 +80,13 @@
     {
       "name": "rehabaseal",
       "displayName": "RehabASeal",
-      "summary": "An application developed for the Pacific Marine Mammal Center: ",
+      "summary": "RehabASeal is an educational application developed for the Pacific Marine Mammal Center (based in Laguna Beach CA). Contains interactive narratives of real animals in the facility along with a game to guide the user through the rehabilitation process.",
       "website": "https://media.giphy.com/media/ii2icbwQbqR8tAnt1K/giphy.gif",
       "githubUrl": "https://github.com/aghiulez/RehabASeal",
       "primaryLanguage": "C#",
       "languages": [
         "C#",
-        "Photoshop CS6",
+        "Photoshop-CS6",
         "Unity"
       ],
       "libraries": [
@@ -102,7 +102,7 @@
     {
       "name": "maze",
       "displayName": "Maze",
-      "summary": "Maze Generator/Solver program developed using the DFS algorithm",
+      "summary": "A Maze generator and solver program developed using the DFS algorithm through recursive backtracking. The program allows the user the generate a maze with any given dimensions.",
       "website": "https://media.giphy.com/media/h8a78t18G2WexEs1Op/giphy.gif",
       "githubUrl": "https://github.com/aghiulez/Maze",
       "primaryLanguage": "Java",
@@ -122,18 +122,17 @@
     {
       "name": "zipcodesearch",
       "displayName": "ZipcodeSearch",
-      "summary": "Web application that optimizes the use of Typescript, Docker, and ArangoDB",
+      "summary": "A server-side web application built using NodeJS and React.  Both the Client and API may be run either locally or through dockerized container.",
       "website": "https://media.giphy.com/media/fxTtQq5Di4W50qCVCC/giphy.gif",
       "githubUrl": "https://github.com/aghiulez/ZipcodeSearch",
       "primaryLanguage": "JavaScript",
       "languages": [
         "CSS",
         "HTML",
-        "Dockerfile",
         "TypeScript",
         "JavaScript"
       ],
-      "libraries": [
+      "libraries": [ "NodeJS","ReactJS","ArangoDB", "Docker"
         
       ],
       "images": [
@@ -146,7 +145,7 @@
     {
       "name": "myportfolio",
       "displayName": "myPortfolio",
-      "summary": "My online developer-portfolio to showcase my experience",
+      "summary": "My online developer-portfolio to showcase my experience, accomplishments and projects. Supported to be viewed on both Mobile and Web.",
       "website": "https://media.giphy.com/media/QuPI4By8i5tVCT5Fvr/giphy.gif",
       "githubUrl": "https://github.com/aghiulez/myPortfolio",
       "primaryLanguage": "JavaScript",
@@ -155,7 +154,7 @@
         "HTML",
         "CSS"
       ],
-      "libraries": [
+      "libraries": [ "ReactJS"
         
       ],
       "images": [
@@ -168,14 +167,14 @@
     {
       "name": "boardgames",
       "displayName": "BoardGames",
-      "summary": "BoardGame Environment developed using JavaFX",
+      "summary": "An extensible Board Game Environment which accommodates any board game that involves a grid layout and game elements on this layout, including games such as Chess, Checkers, Tic-Tac-Toe, Gomoku, Connect Four, Nine Men's Morris, Chutes and Ladders, Stratego, Shogi, Pente, Battleship…",
       "website": "https://media.giphy.com/media/dXLgRXbvYF68AnZRfH/giphy.gif",
       "githubUrl": "https://github.com/aghiulez/BoardGames",
       "primaryLanguage": "Java",
       "languages": [
         "Java"
       ],
-      "libraries": [
+      "libraries": [ "JavaFx", "Maven"
         
       ],
       "images": [
