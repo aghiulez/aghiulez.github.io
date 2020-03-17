@@ -61,7 +61,10 @@ nav {
    border: 2px solid rgb(255, 255, 255);
    border-radius: 15px;
 
- }
+}
+nav .dropbtn {
+   display: none;
+}
  
 /* Style the links inside the navigation bar */
 nav .links {
@@ -430,26 +433,67 @@ nav .boldBlue{
    } */
 
 
+
    nav {
+      display:flex;
+      flex-direction: column;
+     
+
+   }
+
+   nav .header{
+      display: flex;
+
+      flex-direction: row;
+      justify-content: space-between;
+
+   }
+   .listener {
+      height: 200%;
+   }
+   .active .links{
       display: flex;
       flex-direction: column;
 
+      
    }
 
-   nav .links{
 
-   
-      width: auto;
-      padding-left: 0;
-      text-align: start;
-      justify-content: flex-start;
-      
+   nav .dropbtn{
+      border: none;
+      display: block;
+      align-self: center;
+      margin-right: 14px;
+      background: url(./588a64e7d06f6719692a2d11.png);
+
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+
+     
+   }
+
+
+
+
+   nav .links{    /* right side */
+
+
+      display: none;
+      /* visibility: hidden; */
+
    }
    
  
-   nav .links a:hover {
-      font-size:18px;
+   nav .links a {
+      
+      color:white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
      }
+
+   nav .show {display:block;}
 
 
    /* ------------------------------------------------------------------ */

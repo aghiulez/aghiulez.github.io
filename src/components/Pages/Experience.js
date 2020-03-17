@@ -16,21 +16,12 @@ const Projects = ({user}) => {
             {user.work.map(work => (
                 
                 <a href={work.website} className="link" target="_blank"  key={work.company}> 
-
                     <h1 className='position'> {work.position} </h1>
-                    <div className = "project">
-
-                    <img className ="gif" src={work.highlights[0]} className='workImg'></img>
-
-                                        
-                                            
+                    <img className ="gif" src={work.highlights[0]} ></img> 
                     <p>{work.summary}</p>
-
-                        <div className='info'>
-                            {/* <h1> {work.position} </h1> */}
-                            {/* <p>{work.company}</p> */}
-                        </div>
-
+                    <div className='info'>
+                        {/* <h1> {work.position} </h1> */}
+                        {/* <p>{work.company}</p> */}
                     </div>
                 </a>
             ))}

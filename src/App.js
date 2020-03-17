@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 
 
 import localUser from './ifilter/myInfo.json';
-import Navbar from './components/Navbar';
+import Page from './components/Active';
 
 
 
@@ -29,7 +29,7 @@ function App() {
   
   
   return (
-    <Navbar user={localUser}/>
+    <Page user={localUser}/>
   );
 }
 

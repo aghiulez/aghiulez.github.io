@@ -6,17 +6,10 @@ const Projects = ({user}) => {
 
 
         <section id="projects">
-
-            
             {user.projects.map(project => (
-                <a href={project.githubUrl} target="_blank" key={project.name} > 
-                    <div className = "project" >
-
+                <a href={project.githubUrl} target="_blank" key={project.name} >
                         <h1 className='projName'> {project.name} </h1>
-                        <img className ="gif" src={project.website} className='gif'></img>
-
-                    
-                        
+                        <img className ="gif" src={project.website} ></img>
                         <p>{project.summary}</p>
                         <div className ="lang">
                             {/* {project.languages.map(language => (
@@ -25,7 +18,6 @@ const Projects = ({user}) => {
                     
                             ))} */}
                         </div>
-                    </div>
                 </a>
             ))}
 
