@@ -11,23 +11,22 @@ const Projects = ({user}) => {
 
             <div className='projects'> 
                 {user.projects.map(project => (
+                    // eslint-disable-next-line react/jsx-no-target-blank
                     <a className = 'project' href={project.githubUrl} target="_blank" key={project.name} >
                             
                             <img className ="gif" src={project.website}  alt='gif of app'/>
                             <div className = 'information'> 
-                                <h1 className='projName'> {project.name} </h1>
-                                    <div className ="lang">
+                                <h1 className='projectName'> {project.name} </h1>
+                                    <div className ="languages">
                                         {project.languages.map(language => (
                                             
-                                                <text><em>{language}</em> </text>
-                                
+                                                <em key={language}>{language} </em>
                                         ))}
-                                        <div className ="frames">
+                                    <div className ="frameworks">
                                         {project.libraries.map(library => (
-                                            
-                                                <text><em>{library}</em> </text>
-                                
-                                        ))} </div>
+                                                <em key={library}>{library}</em>
+                                        ))} 
+                                    </div>
                                     </div>
                                 <p>{project.summary}</p>
                             </div>

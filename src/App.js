@@ -1,25 +1,14 @@
 import React from 'react';
-
-
-// UNDERSTAND BELOW: 
-//we use the useEffect hook to make the request only when the component mounts by using an empty array [] 
-//for the “watch” parameter. We store the result with the useState hook and will pass it to our portfolio components 
-//which we’ll build in the upcoming sections.
 import { useState, useEffect } from 'react'; 
-
-
-
-import localUser from './ifilter/myInfo.json';
+// import localUser from './ifilter/myInfo.json';
 import Page from './components/Active';
+import Footer from './components/Footer';
 
 
 
-function App() {
-
+const App = () => {
   const [user, setUser] = useState(null);  //initial value of user is null 
-  useEffect(() => {
-
-    // NOTE: Use your username below
+  useEffect( () => {
     fetch('https://gitconnected.com/v1/portfolio/aghiulez') // returns a promise containing the response 
       .then(res => res.json())
       .then(user => {
@@ -27,10 +16,15 @@ function App() {
       });
   }, []); //empty array (as second arg) will only call effect on initial render...
   
-  
-  return (
-    <Page user={localUser}/>
+  if(!user){
+    console.log("nothing");
+    return ( <div>loading</div>);
+  }
+  return(
+      <Page className="page" user={user} />
+
   );
+
 }
 
 export default App;

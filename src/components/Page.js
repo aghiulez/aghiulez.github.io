@@ -8,7 +8,6 @@ import Experience from './Pages/Experience.js';
 
 import React from "react";
 import {
-  // HashRouter as Router1,
   Switch,
   Route
 } from "react-router-dom";
@@ -16,8 +15,6 @@ import {
 
 
 const Page = ({user}) =>  {
-
-
     return (
       <Switch >          
         <Route path="/contact">
