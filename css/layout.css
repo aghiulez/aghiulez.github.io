@@ -25,18 +25,21 @@
    
   
 } */
-html{
-   height: 100%;
-}
+
 html, body, #root{
-   min-height: 100%;
+   /* min-height: 100%; */
+   height: 100%;
 }
 
 
 body{   /* why does body do the trick buy container doesnt */
+   margin-top:0;
+   margin-bottom: 0;
+   
    background-color: black;  
    /* padding: 14px 16px;   */
    color: white; 
+
   
 
 
@@ -47,7 +50,9 @@ body{   /* why does body do the trick buy container doesnt */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
-    
+    min-height: 100%;
+  
+
 
  }
 
@@ -61,33 +66,63 @@ body a{
 
    display: flex;
    flex-direction: column;
-   /* justify-content: center; */
-   padding-bottom: 50px;
-   
+
+
+
+   flex-grow: 1;
 
  
 
 }
 
-Footer{
+
+
+Footer, #push{
+   width: inherit;
    display: flex;
+   
    justify-content: space-between;
-   position: fixed; /* instead of absolute */
-   bottom: 0;
-   padding-left: 5px;
-   width: 100%;
+
    height: 50px;
    background-color: black;
    border-top: 2px solid white;
-   
-}
 
-.socialLinks{
-   
-   padding: 14px;
+
+
 
    
 }
+
+.SocialLinks{
+   display: flex;
+}
+
+#about .SocialLinks{
+   display: flex;
+   flex-direction: column;
+  
+}
+
+#about .SocialLinks a{
+   margin-top: 5px;
+  
+}
+
+.footer .SocialLinks{
+   display: flex;
+   flex-direction: row;
+   margin:10px;
+
+
+}
+.footer .SocialLinks .name{
+   display:none;
+   
+}
+.footer .SocialLinks a{
+   margin-left: 10px;
+}
+
 
 
 .pageSummary{
@@ -147,12 +182,15 @@ nav .links {
  flex-direction: row;
  justify-content: flex-end;
  width: 100%;
+
+
  
  /* float: right; */
  /* text-align: end; */
  padding: 14px 16px;
 
  font-size: 18px;
+
  
 }
 
@@ -236,7 +274,14 @@ nav .boldBlue{
   
    flex-direction: row;
 
+
   
+
+}
+
+
+#about .contacts{
+   margin-left: 15px;
 }
 #about .profile-pic {
 
@@ -261,6 +306,9 @@ nav .boldBlue{
  }
 #about p{
    font-size: 1rem;
+}
+#about p a{
+   color: #0096cc;
 }
 
 
@@ -329,7 +377,7 @@ nav .boldBlue{
    /* width: 300px; */
    margin-left: 14px;
 }
-#projectspage .project .information .projName{
+#projectspage .project .information .projectName{
    font-size: 1.75rem;
    margin-top: 0px;
    margin-bottom: 0px;
@@ -385,11 +433,13 @@ nav .boldBlue{
 #experiencepage .link .gif{
   
    opacity: 100;
-
+   width: 200px;
+   height: 200px;
    /*  */
    /* object-fit: contain; */
    /* object-fit: cover; */
    border-radius: 10%; 
+   
 
    padding-right: 16px;
 }
@@ -411,6 +461,13 @@ nav .boldBlue{
 #experiencepage .link .info p{
    font-size: 1rem;
 }
+#experiencepage .link .info h4{
+   margin: 0;
+}
+#experiencepage .link .info h5{
+   margin: 0;
+}
+
 
 
 
@@ -479,6 +536,7 @@ nav .boldBlue{
    /* a. General
    /* ------------------------------------------------------------------ */
    .footer{
+
       width: 100%;
    }
    
@@ -520,7 +578,7 @@ nav .boldBlue{
       display: block;
       align-self: center;
       margin-right: 14px;
-      background: url(./588a64e7d06f6719692a2d11.png);
+      background: url(./hamburger.png);
 
       width: 50px;
       height: 50px;
@@ -538,15 +596,22 @@ nav .boldBlue{
       display: none;
       /* visibility: hidden; */
 
+
+   }
+   .active .links{
+      padding: 0;
    }
    
  
    nav .links a {
       
       color:white;
-      padding: 12px 16px;
+      padding: 10px 16px;
+
       text-decoration: none;
       display: block;
+      margin-left: 0;
+      border-top: 2px white solid;
      }
 
      .pageSummary{
@@ -593,6 +658,10 @@ nav .boldBlue{
       
      
    }
+   #about .contacts{
+      margin-left:0px;
+   }
+
    #about .profile-pic{
       order: 1;
    }
