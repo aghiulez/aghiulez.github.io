@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react'; 
 // import localUser from './ifilter/myInfo.json';
 import Page from './components/Active';
-import Footer from './components/Footer';
+
 
 
 
