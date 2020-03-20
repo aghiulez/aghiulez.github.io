@@ -1,17 +1,19 @@
 import React from 'react';
 
-
 const Contact = () => {
-    // const email = 'aghiulezian@gmail.com';
+
+
+
     return (
         <section id="contact">
             <h1 className='title'> Get in touch with me!</h1>
-            <form  className='contactForm' action='' method="get">
+            <form  className='contactForm' action=''>
                 <div className='prompts'>
 
                     <div className='labels'>
                         <label htmlFor="contactName">Name <span className="required"></span></label>
                         <label htmlFor="contactEmail">Email <span className="required"></span></label>
+                        
                         <label htmlFor="contactMessage">Message <span className="required"></span></label>
                     </div>
                     <div className='inputs'>

@@ -6,8 +6,13 @@
    Table Of Contents:
    a. General
    b. Navbar
-   c. Home
-   d. About
+   c. page header
+   d. footer
+   e. Home
+   f. About
+   g. projects
+   h. Experience
+   i. contact
 
 
 /* ===================================================================== */
@@ -21,102 +26,101 @@ html, body {
    min-height: 100%;
    height: 100%;
 }
-
-
-
-
-
-body{  
-
-   
+body{   
    background-color: black;  
-
    color: white; 
    overflow: overlay;
-
-  
-
-
-
+   margin:0;
  }
+ body a{
+   text-decoration: none;
+   color: white;
+}
 
  #root {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100%;
-
-
+ 
  }
 
-body a{
-   text-decoration: none;
-   color: white;
 
-}
+
+
+
 
 .curr{  
-
    display: flex;
    flex-direction: column;
-
-
-
    flex-grow: 1;
-   padding-bottom: 10px;
-
- 
-
+   padding-bottom: 10px; 
 }
 
 
 
-Footer{
- 
-   width: inherit;
-   display: flex;
-   
-   justify-content: space-between;
 
-   height: 50px;
-   background-color: black;
-   border-top: 2px solid white;
-
-
-
-
-   
-}
 
 .SocialLinks{
    display: flex;
 }
 
-#about .SocialLinks{
-   display: flex;
-   flex-direction: column;
-  
-}
 
-#about .SocialLinks a{
-   margin-top: 5px;
-  
-}
 
-.footer .SocialLinks{
+
+/* ------------------------------------------------------------------ */
+/* b. navbar
+/* ------------------------------------------------------------------ */
+
+
+nav {
    display: flex;
    flex-direction: row;
-   margin:10px;
+   border-bottom: 2px solid rgb(255, 255, 255);
+   align-content: center;
+}
+
+nav .dropbtn {
+   display: none;
+}
+ 
+/* Style the links inside the navigation bar */
+nav .links {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ width: 100%;
+ padding: 14px 16px;
+ font-size: 18px;
+}
+/* Change the color of links on hover */
+nav .links a:hover {
+ font-size:24px;
+}
+nav .links a{
+   margin-left: 14px;
+}
+nav .AraMatthew {
+   align-self: center;
+   text-decoration: none;
+   padding: 10px 12px;
+   color: #ffffff;
+   float: left;
+   font-size: 32px;
+}
+nav .boldBlue{
+   font-size: larger;
+   color: rgb(19, 34, 38);
+   background-color: white;
+}
+
+/* ------------------------------------------------------------------ */
+/* b. page header
+/* ------------------------------------------------------------------ */
 
 
-}
-.footer .SocialLinks .name{
-   display:none;
-   
-}
-.footer .SocialLinks a{
-   margin-left: 10px;
-}
+
+
 
 
 
@@ -152,79 +156,37 @@ Footer{
 }
 
 /* ------------------------------------------------------------------ */
-/* b. navbar
+/* b. footer
 /* ------------------------------------------------------------------ */
 
+Footer{ 
+   width: inherit;
+   display: flex;
+   justify-content: space-between;
+   height: 50px;
+   background-color: black;
+   border-top: 2px solid white;   
+}
 
-nav {
-   
-   /* justify-content: stretch; */
+
+.footer p{
+   padding-left: 10px;
+}
+
+.footer .SocialLinks{
    display: flex;
    flex-direction: row;
-
-   border-bottom: 2px solid rgb(255, 255, 255);
-   /* border-radius: 15px; */
-   align-content: center;
-
-}
-nav .dropbtn {
-   display: none;
-}
- 
-/* Style the links inside the navigation bar */
-nav .links {
- display: flex;
- flex-direction: row;
- justify-content: flex-end;
- width: 100%;
-
-
- 
- /* float: right; */
- /* text-align: end; */
- padding: 14px 16px;
-
- font-size: 18px;
-
- 
-}
-
-/* Change the color of links on hover */
-nav .links a:hover {
- font-size:24px;
-}
-nav .links a{
-   margin-left: 14px;
-   
-   /* margin: 14px; */
+   margin:10px;
 }
 
 
 
-
-nav .AraMatthew {
-   align-self: center;
-   text-decoration: none;
-   padding: 10px 12px;
-   color: #ffffff;
-   float: left;
-   font-size: 32px;
-
+.footer .SocialLinks .name{
+   display:none;
    
 }
-
-
-
-
-
-
-
-
-
-nav .boldBlue{
-   font-size: larger;
-   color: rgb(19, 34, 38);
-   background-color: white;
+.footer .SocialLinks a{
+   margin-left: 10px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -232,16 +194,49 @@ nav .boldBlue{
 /* ------------------------------------------------------------------ */
 
 #home{
+   height: inherit;
+   flex-grow: 1;
   
    align-self: baseline;
-   margin-top: 150px;
-   
+
    font-size: xx-large;
    text-align: center;
-   margin-left: 150px;
-   margin-right: 150px;
+   margin:150px;
+
+   display: flex;
+   flex-direction: column;
+
 
 }
+#home p{
+   flex-grow: 1;
+}
+#home .typingEffect{
+   align-self: center;
+   width: max-content;
+   background-color: white;
+   /* justify-content: flex-end; */
+   color:black;
+   /* align-content: flex-end; */
+}
+
+
+#home a{
+   align-self: center;
+   width: max-content;
+}
+#home .bottombtn{
+   border: none;
+   display: block;
+   align-self: center;
+
+   background: url(./bottom-button.png);
+   width: 50px;
+   height: 50px;
+   background-size: cover;
+}
+
+
 
 
 
@@ -255,54 +250,35 @@ nav .boldBlue{
 
 
 #about{
-   
-   margin: 20px;
-   width: 700px;
-
-   /* centered in parent element */
-   position: relative; 
-   left: 50%;
-   transform: translateX(-50%);
-
+   margin: 10%;
    display: flex;
-  
    flex-direction: row;
+}
 
-
-  
-
+#about h1{
+   margin: 0;
+   font-size: xx-large;
+}
+#about .bio p{
+  font-size: 1rem;
+}
+#about .bio p a{
+  color: #0096cc;
 }
 
 
 #about .contacts{
    margin-left: 15px;
 }
-#about .profile-pic {
-
-   border: 2px solid white;
-   align-self: stretch;
-   height: 300px;
-   margin-right: 20px;
-   border-radius: 20px;
-
- 
- }
-
-
- #about .feed{
-    align-self: stretch;
-    font-size: x-large;
- }
-
- #about h1{
-    margin: 0;
-    font-size: xx-large;
- }
-#about p{
-   font-size: 1rem;
+#about .SocialLinks{
+   display: flex;
+   flex-direction: column;
+  
 }
-#about p a{
-   color: #0096cc;
+
+#about .SocialLinks a{
+   margin-top: 5px;
+  
 }
 
 
@@ -313,64 +289,40 @@ nav .boldBlue{
 
 
 #projectspage{
-
-   width: 100%;
-   height: auto;
    display: flex;
    flex-direction: column;
    align-items:  center;
-  
-   
-
-
-
-
 }
 
 
 
 #projectspage .project{
-
-   
    max-width: 608px;
-   /* width: min-content; */
    display: flex;
    display: row;
    align-items: flex-start;
-
-
    padding-top: 32px;
    padding-bottom: 32px;
-
-
    border-bottom: 5px solid white;
-   /* border-bottom-style: double; */
    border-width: 1px;
    border-spacing: 15px;
 }
 
 #projectspage .project .gif{
-  
    opacity: 100;
-
    width: 190px;
-   /* object-fit: contain; */
-   object-fit: cover;
    border-radius: 10%; 
-
    padding-left: 16;
    padding-right: 16px;
 }
 
 #projectspage .project .information{
-
-  
    display: flex;
    flex-direction: column;
    height: auto;
-   /* width: 300px; */
    margin-left: 14px;
 }
+
 #projectspage .project .information .projectName{
    font-size: 1.75rem;
    margin-top: 0px;
@@ -391,60 +343,37 @@ nav .boldBlue{
 
 #experiencepage{
 
-   width: 100%;
-   height: auto;
+   /* width: 100%; */
+   /* height: auto; */
    display: flex;
    flex-direction: column;
    align-items:  center;
-  
-   
-
-
-
-
 }
 
 #experiencepage .link{
-
-   
    max-width: 608px;
-   /* width: min-content; */
    display: flex;
    display: row;
    align-items: flex-start;
-
-
    padding-top: 32px;
    padding-bottom: 32px;
-
-
    border-bottom: 5px solid white;
-   /* border-bottom-style: double; */
    border-width: 1px;
    border-spacing: 15px;
 }
 
 #experiencepage .link .gif{
-  
    opacity: 100;
    width: 200px;
    height: 200px;
-   /*  */
-   /* object-fit: contain; */
-   /* object-fit: cover; */
    border-radius: 10%; 
-   
-
    padding-right: 16px;
 }
 
 #experiencepage .link .info{
-
-  
    display: flex;
    flex-direction: column;
    height: auto;
-   /* width: 300px; */
    margin-left: 14px;
 }
 #experiencepage .link .info .position{
@@ -529,46 +458,24 @@ nav .boldBlue{
    /* ------------------------------------------------------------------ */
    /* a. General
    /* ------------------------------------------------------------------ */
-   .footer{
 
-      width: 100%;
-   }
-   
-   .footer .SocialLinks a{
-      margin-left: 5px;
-   }
+
+
    /* ------------------------------------------------------------------ */
    /* b. Navbar
    /* ------------------------------------------------------------------ */
-   /* #navbar .curr{
-      width: 80%;
-      top: 40%;
-   } */
-
 
 
    nav {
       display:flex;
       flex-direction: column;
-     
-
    }
 
    nav .header{
       display: flex;
-
       flex-direction: row;
       justify-content: space-between;
-
    }
- 
-   .active .links{
-      display: flex;
-      flex-direction: column;
-
-      
-   }
-
 
    nav .dropbtn{
       border: none;
@@ -576,52 +483,39 @@ nav .boldBlue{
       align-self: center;
       margin-right: 14px;
       background: url(./hamburger.png);
-
       width: 50px;
       height: 50px;
       background-size: cover;
-
-     
    }
 
-
-
-
-   nav .links{    /* right side */
-
-
+   nav .links{   
       display: none;
-      /* visibility: hidden; */
-
-
    }
    .active .links{
       padding: 0;
+      display: flex;
+      flex-direction: column; 
    }
    
  
    nav .links a {
       
-      color:white;
+      color: white;
       padding: 10px 16px;
 
       text-decoration: none;
       display: block;
       margin-left: 0;
       border-top: 2px white solid;
-     }
+   }
 
-     .pageSummary{
-        width: auto;
-        padding: 32px;
-     }
 
    /* ------------------------------------------------------------------ */
    /* c. Home
    /* ------------------------------------------------------------------ */
    
    #home{
-      margin:0px;
+      margin:10%;
       font-size: x-large;
    }
    
@@ -642,18 +536,9 @@ nav .boldBlue{
    
       width: auto;
       height: auto;
-   
-      /* centered in parent element */
-      /* position: relative;  */
-      /* left: 50%; */
-      /* transform: translateX(-50%); */
-   
       display: flex;
-     
       flex-direction: column;
-      margin-left:0;
-      
-     
+      /* margin-left:0; */
    }
    #about .contacts{
       margin-left:0px;
@@ -666,6 +551,24 @@ nav .boldBlue{
       margin-top: 10px;
       font-size: medium;
    }
+
+   #about .contacts .SocialLinks{
+      /* flex-direction: column;
+      flex-wrap: wrap; */
+      /* flex-flow: column reverse; */
+      flex-flow: column wrap;
+      max-height: 100px;
+
+
+
+   }
+
+   #about .contacts .SocialLinks div{
+      /* margin-right: 15px; */
+
+      width: max-content;
+   }
+
 
    /* ------------------------------------------------------------------ */
    /* c. Projects
