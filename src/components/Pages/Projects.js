@@ -1,15 +1,11 @@
 import React from 'react';
-import { useState } from 'react';
+import ProjectModal from '../ProjectModal';
 
 
-import Modal from 'react-modal';
-Modal.setAppElement('#root');
+
 
 
 const Projects = ({user}) => {
-
-
-    // const [modalIsOpen, setModalIsOpen] = useState(false);
 
 
     return (
@@ -17,9 +13,10 @@ const Projects = ({user}) => {
 
 
 
+
             <div className='projects'> 
                 {user.projects.map(project => (
-
+                    
                     // eslint-disable-next-line react/jsx-no-target-blank
                     <div className = 'project'   key={project.name} >
 
@@ -40,18 +37,15 @@ const Projects = ({user}) => {
                                         ))} 
                                     </div>
                                     </div>
-                                {/* <a href={project.summary} target='_blank'> CHECK IT OUT</a> */}
+
                                 <p>{project.summary}</p>
+
                             </div>
 
+                            {/* <ProjectModal project={project} /> */}
 
-                            
 
-                            {/* <button onClick={() => setModalIsOpen(true) }> open modal</button> 
-                            <Modal style={{overlay:{backgroundColor: 'transparent'}}} isOpen={modalIsOpen} onRequestClose={()=>setModalIsOpen(false)}>
 
-                                <iframe src="https://aramatthew.com/RehabASeal/" height="1000" width="1000"></iframe>
-                            </Modal> */}
 
 
 
