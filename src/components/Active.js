@@ -16,7 +16,6 @@ const Active = ({user}) =>  {
       <Navbar />
       <div className ="curr">
         <Page user = {user}/>
-
       </div>
       <Footer user = {user} />
     </Router> 

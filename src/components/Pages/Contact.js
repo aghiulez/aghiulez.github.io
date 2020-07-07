@@ -3,7 +3,6 @@ import React from 'react';
 const Contact = () => {
 
 
-
     return (
         <section id="contact">
             <h1 className='title'> Get in touch with me!</h1>

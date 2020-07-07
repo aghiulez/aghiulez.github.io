@@ -12,7 +12,7 @@ const SocialLinks = ({user}) => {
 
 
                 
-                    <div key ={profile.network}>
+                    <div className = {profile.network} key ={profile.network}>
                         <SocialIcon url={profile.url} target="_blank" style={{ height: 30, width: 30 }} bgColor="#ffffff"/>
                         <em className="name"> {profile.network} </em>
                     </div>
@@ -21,8 +21,8 @@ const SocialLinks = ({user}) => {
                     
                 ))}
                 <div>
-                <SocialIcon url="mailto:aghiulezian@gmail.com" network= 'email' style={{ height: 30, width: 30 }} bgColor="#ffffff"/>
-                <em className="name"> email </em>
+                    <SocialIcon url="mailto:aghiulezian@gmail.com" network= 'email' style={{ height: 30, width: 30 }} bgColor="#ffffff"/>
+                    <em className="name"> email </em>
                 </div>
             </div>
            
