@@ -1,8 +1,6 @@
-
 /* ===================================================================== */
 /*   Layout Stylesheet
 /* ===================================================================== 
-
    Table Of Contents:
    a. General
    b. Navbar
@@ -13,8 +11,6 @@
    g. projects
    h. Experience
    i. contact
-
-
 /* ===================================================================== */
 
 
@@ -22,68 +18,40 @@
 /* a. General
 /* ------------------------------------------------------------------ */
 
-html, body {
-   min-height: 100%;
+html,body{
    height: 100%;
+   margin: 0;
+   padding: 0;
 }
-body{   
-   background-color: black;  
-   color: white; 
-   overflow: overlay;
-   margin:0;
- }
- body a{
+
+body{
+   background-color: black; 
+}
+#root {
+   box-sizing: border-box;
+   min-height: 100%;
+   padding: 0 0 100px;
+   position: relative;
+
+
+   background-color: black; /*get rid of later*/
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: white;
+}
+#root a{
    text-decoration: none;
    color: white;
 }
 
- #root {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
- 
- }
-
-
-
-
-
-
-.curr{  
-   display: flex;
-   flex-direction: column;
-   flex-grow: 1;
-   padding-bottom: 10px; 
-}
-
-
-
-
-
-.SocialLinks{
-   display: flex;
-}
-
-
-
-
 /* ------------------------------------------------------------------ */
 /* b. navbar
 /* ------------------------------------------------------------------ */
-
-
 nav {
    display: flex;
    flex-direction: row;
    border-bottom: 2px solid rgb(255, 255, 255);
-   align-content: center;
 }
 
-nav .dropbtn {
-   display: none;
-}
- 
 /* Style the links inside the navigation bar */
 nav .links {
  display: flex;
@@ -93,6 +61,7 @@ nav .links {
  padding: 14px 16px;
  font-size: 18px;
 }
+
 /* Change the color of links on hover */
 nav .links a:hover {
  font-size:24px;
@@ -113,15 +82,9 @@ nav .boldBlue{
    color: rgb(19, 34, 38);
    background-color: white;
 }
-
 /* ------------------------------------------------------------------ */
 /* b. page header
 /* ------------------------------------------------------------------ */
-
-
-
-
-
 
 
 .pageSummary{
@@ -131,7 +94,7 @@ nav .boldBlue{
    
    background-color: rgb(19, 34, 38);
    /* width: 100%; */
-   padding: 32px;
+   padding: 24px;
    border-bottom: 2px solid #ffffff; 
 }
 .pageSummary .container{
@@ -159,31 +122,30 @@ nav .boldBlue{
 /* b. footer
 /* ------------------------------------------------------------------ */
 
-Footer{ 
-   width: inherit;
+Footer { 
+   bottom: 0;
+   position: absolute;
    display: flex;
    justify-content: space-between;
    height: 50px;
    background-color: black;
+   width: 100%;  
+   align-items: center;
    border-top: 2px solid white;   
 }
-
-
 .footer p{
-   padding-left: 10px;
-}
 
+   padding-left: 10px;
+   
+
+}
 .footer .SocialLinks{
    display: flex;
    flex-direction: row;
-   margin:10px;
+   padding-right: 10px;
 }
-
-
-
 .footer .SocialLinks .name{
-   display:none;
-   
+   display:none;  
 }
 .footer .SocialLinks a{
    margin-left: 10px;
@@ -194,33 +156,20 @@ Footer{
 /* ------------------------------------------------------------------ */
 
 #home{
+   margin-top: 10%;
+   margin-right: 5%;
+   margin-left: 5%;
    height: inherit;
    flex-grow: 1;
   
    align-self: baseline;
 
-   font-size: xx-large;
+   font-size: x-large;
    text-align: center;
-   margin:150px;
 
    display: flex;
    flex-direction: column;
-
-
 }
-#home p{
-   flex-grow: 1;
-}
-#home .typingEffect{
-   align-self: center;
-   width: max-content;
-   background-color: white;
-   /* justify-content: flex-end; */
-   color:black;
-   /* align-content: flex-end; */
-}
-
-
 #home a{
    align-self: center;
    width: max-content;
@@ -236,50 +185,48 @@ Footer{
    background-size: cover;
 }
 
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------ */
 /* d. About
 /* ------------------------------------------------------------------ */
 
 
 #about{
-   margin: 10%;
+   margin-left: 5%;
+   margin-right: 5%;
    display: flex;
    flex-direction: row;
 }
-
-#about h1{
-   margin: 0;
-   font-size: xx-large;
-}
 #about .bio p{
-  font-size: 1rem;
-}
-#about .bio p a{
-  color: #0096cc;
-}
+   font-size: 1rem;
+ }
+ #about .bio p a{
+   color: #0096cc;
+ }
 
-
-#about .contacts{
+ #about .contacts{
    margin-left: 15px;
 }
 #about .SocialLinks{
    display: flex;
    flex-direction: column;
+   justify-content: center;
   
 }
 
+
+
+
 #about .SocialLinks a{
    margin-top: 5px;
+
+
+}
+#about .SocialLinks .gitconnected{
+   display: none
   
 }
+
+
 
 
 /* ------------------------------------------------------------------ */
@@ -392,228 +339,137 @@ Footer{
 }
 
 
-
-
-
-
-
-/* ------------------------------------------------------------------ */
-/* g. contact
-/* ------------------------------------------------------------------ */
-
-
-
-#contact{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-
-   
-}
-
-#contact .title{
-   font-size: xx-large;
-}
-
-#contact .prompts{
-   display: flex;
-
-   flex-direction: row;
-   padding: 14px;
-   border: 2px solid white;
-   border-radius: 14px;
-}
-
-#contact .labels{
-   font-size: x-large;
-   display: flex;
-   flex-direction: column;
-   padding-right: 14px;
-   justify-content: flex-start;
-
-}
-
-#contact .inputs{
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-  
-
-}
-
-#contact .submit{
-   padding: 14px;
-   text-align: center;
-}
-
-
 /* PHONE LAYOUT... */
 /* ------------------------------------------------------------------ */
 /* ------------------------------------------------------------------ */
 /* ------------------------------------------------------------------ */
 /* ------------------------------------------------------------------ */
-
 @media only screen and (max-width: 600px) {
 
-   /* ------------------------------------------------------------------ */
-   /* a. General
-   /* ------------------------------------------------------------------ */
 
-
-
-   /* ------------------------------------------------------------------ */
-   /* b. Navbar
-   /* ------------------------------------------------------------------ */
-
-
-   nav {
-      display:flex;
-      flex-direction: column;
-   }
-
-   nav .header{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-   }
-
-   nav .dropbtn{
-      border: none;
-      display: block;
-      align-self: center;
-      margin-right: 14px;
-      background: url(./hamburger.png);
-      width: 50px;
-      height: 50px;
-      background-size: cover;
-   }
-
-   nav .links{   
-      display: none;
-   }
-   .active .links{
-      padding: 0;
-      display: flex;
-      flex-direction: column; 
-   }
+/* ------------------------------------------------------------------ */
+/* b. page header
+/* ------------------------------------------------------------------ */
+.pageSummary .container{
+   flex-direction: row;
+   align-items: flex-start;
+   flex-wrap: wrap;
+}
+.pageSummary .container h1{
+   font-size: large;
    
- 
-   nav .links a {
+}
+/* ------------------------------------------------------------------ */
+/* b. footer
+/* ------------------------------------------------------------------ */
+
+.footer p{
+   padding-left: 10px;
+   margin: 0;
+   font-size: smaller;
+}
+/* ------------------------------------------------------------------ */
+/* b. Navbar
+/* ------------------------------------------------------------------ */
+
+
+nav {
+   display:flex;
+   flex-direction: column;
+}
+nav .header{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+nav .dropbtn{
+   border: none;
+   display: block;
+   align-self: center;
+   margin-right: 14px;
+   background: url(./hamburger.png);
+   width: 50px;
+   height: 50px;
+   background-size: cover;
+}
+nav .links{   
+   display: none;
+}
+.active .links{
+   padding: 0;
+   display: flex;
+   flex-direction: column; 
+}
+nav .links a {
       
-      color: white;
-      padding: 10px 16px;
+   color: white;
+   padding: 10px 16px;
 
-      text-decoration: none;
-      display: block;
-      margin-left: 0;
-      border-top: 2px white solid;
-   }
+   text-decoration: none;
+   display: block;
+   margin-left: 0;
+   border-top: 2px white solid;
+}
+/* ------------------------------------------------------------------ */
+/* c. Home
+/* ------------------------------------------------------------------ */
+
+#home{
+   margin-top :0%;
+   font-size: large;
+}
+
+#home h1{
+   font-size: x-large;
+}
+#home p{
+   margin: 0;
+}
+#home .bottombtn{
+   margin: 10%;
+}
 
 
-   /* ------------------------------------------------------------------ */
-   /* c. Home
-   /* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* d. About
+/* ------------------------------------------------------------------ */
+
    
-   #home{
-      margin:10%;
-      font-size: x-large;
-   }
-   
-   #home h1{
-      font-size: xx-large;
-   }
 
-
-   /* ------------------------------------------------------------------ */
-   /* d. About
-   /* ------------------------------------------------------------------ */
-
-   
-
-
-   #about {
+#about {
    
    
-      width: auto;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      /* margin-left:0; */
-   }
-   #about .contacts{
-      margin-left:0px;
-   }
+   width: auto;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   /* margin-left:0; */
+}
+#about .contacts{
+   margin-left:0px;
+}
 
-   #about .profile-pic{
-      order: 1;
-   }
-   #about .bio{
-      margin-top: 10px;
-      font-size: medium;
-   }
+#about .profile-pic{
+   order: 1;
+}
+#about .bio{
+   margin-top: 10px;
+   font-size: medium;
+}
 
-   #about .contacts .SocialLinks{
-      /* flex-direction: column;
-      flex-wrap: wrap; */
-      /* flex-flow: column reverse; */
-      flex-flow: column wrap;
-      max-height: 100px;
-
-
-
-   }
-
-   #about .contacts .SocialLinks div{
-      /* margin-right: 15px; */
-
-      width: max-content;
-   }
+#about .contacts .SocialLinks{
+   /* flex-direction: column;
+   flex-wrap: wrap; */
+   /* flex-flow: column reverse; */
+   flex-flow: column wrap;
+   max-height: 100px;
 
 
-   /* ------------------------------------------------------------------ */
-   /* c. Projects
-   /* ------------------------------------------------------------------ */
 
-   #projectspage .project{
- 
-      
-      flex-direction: column;
-      border-width: 1px;
+}
 
-   }
-   #projectspage .projects{
-      width: 90%;
-   }
-   
-   #projectspage .project .gif{
+#about .contacts .SocialLinks div{
+   /* margin-right: 15px; */
 
-      width: 100%;
-      height: auto;
-      padding-bottom: 10px;
-      padding-left: 0;
-
-
-   }
-   /* ------------------------------------------------------------------ */
-   /* c. experience
-   /* ------------------------------------------------------------------ */
-   #experiencepage .link{
- 
-      width: 90%;
-      flex-direction: column;
-      border-width: 1px;
-
-   }
-   
-   #experiencepage .link .gif{
-
-      width: 100%;
-      height: auto;
-      padding-bottom: 10px;
-      padding-right: 0px;
-
-
-   }
-
-
+   width: max-content;
 }
