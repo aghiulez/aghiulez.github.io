@@ -8,7 +8,7 @@ const Page = ({user}) =>  {
     const [ navOpen, setNavOpen ] = useState(false);
 
     return (
-       
+       <section id='nav'>
         <nav className = {navOpen ? 'active' : ''}>
 
 
@@ -24,6 +24,7 @@ const Page = ({user}) =>  {
                     <Link to="/contact">Contact</Link>               
                 </div>
         </nav>
+        </section>
 
     );
 }
