@@ -1,47 +1,74 @@
 import React from 'react';
 
-const Contact = () => {
 
 
+export default class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: "show"
+    };
+  }
+
+  render() {
+    const { status } = this.state;
+    console.log(status);
     return (
-        <section id="contact">
-            <h1 className='title'> Get in touch with me!</h1>
-            <form  className='contactForm' action=''>
-                <div className='prompts'>
+      <form
+        onSubmit={this.submitForm}
+        action="https://formspree.io/xjvaajap"
+        method="POST"
+      >
+      
+        {status !== "SUCCESS" ? 
+        <div>
+          <div className='row'>
+            <div className='label'>
+              <label>Email:</label>
+            </div>
+            <div className='input'>
+              <input type="email" name="email" />
+            </div>
+          </div>
+          <div className='row'>
+            <div className='label'>
+              <label>Message:</label>
+            </div>      
+            <div className='input'>
+              <textarea className="messageInput" type="text" />
+            </div>    
+          </div>
+        </div>
+        :<p>Sent.</p>
 
-                    <div className='labels'>
-                        <label htmlFor="contactName">Name <span className="required"></span></label>
-                        <label htmlFor="contactEmail">Email <span className="required"></span></label>
-                        
-                        <label htmlFor="contactMessage">Message <span className="required"></span></label>
-                    </div>
-                    <div className='inputs'>
-                    <input type="text" className='inputs' defaultValue="" size="35" id="contactName" name="contactName" />
-                    <input type="text" className='inputs' defaultValue="" size="35" id="contactEmail" name="contactEmail"/>
-                    <textarea cols="50" rows="15" className='inputs'  id="contactMessage" name="contactMessage"></textarea>
-                    </div>
-
-                    
-
-                </div>
-                <div className="submit">
-                    <button >Submit</button>
-
-                </div>
-
-                
-
-
-
-
-            </form>
+      }
 
 
 
-        </section>
+        {status === "SUCCESS" ? <p>Thank you, I will get back to you soon!</p> : <button>Submit</button>}
+        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+      </form>
     );
+  }
 
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+      
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
 }
-
-
-export default Contact;

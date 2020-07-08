@@ -18,7 +18,7 @@ const App = () => {
   
   if(!user){
     console.log("nothing");
-    return ( <div>loading</div>);
+    return ( <div>   </div>);
   }
   return(
       <Page className="page" user={user} />

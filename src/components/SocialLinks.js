@@ -21,7 +21,7 @@ const SocialLinks = ({user}) => {
                     
                 ))}
                 <div>
-                    <SocialIcon url="mailto:aghiulezian@gmail.com" network= 'email' style={{ height: 30, width: 30 }} bgColor="#ffffff"/>
+                    <SocialIcon url={'mailto:'+ user.basics.email} network= 'email' style={{ height: 30, width: 30 }} bgColor="#ffffff"/>
                     <em className="name"> email </em>
                 </div>
             </div>
