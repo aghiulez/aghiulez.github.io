@@ -39,7 +39,7 @@ body{
    color: white;
 }
 .curr{ /* put this somewhere better */
-   background-color: blue; /* remove later */
+   background-color: black; /* remove later */
    flex: 1;
    overflow: auto;
 }

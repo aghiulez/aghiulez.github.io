@@ -15,6 +15,10 @@ import {
 
 
 const Page = ({user}) =>  {
+
+    const pageSummaryMapping = user.interests.reduce(
+      (obj, item) => Object.assign(obj, { [item.name]: item.keywords[0] }), {});
+
     return (
       <section id="page">
       <Switch >          
@@ -23,7 +27,7 @@ const Page = ({user}) =>  {
             <div className='container'>
                   <h1>Contact</h1>
                   <p>
-                    If you'd like to reach me, feel free to contact me via <a href={'mailto:'+ user.basics.email}>email</a>, <a href={user.basics.profiles[2].url}>LinkedIn</a>, or the form below!
+                    {pageSummaryMapping.contact}
                   </p>
                 </div>
           </div>
@@ -33,9 +37,9 @@ const Page = ({user}) =>  {
           <div className = "pageSummary"> 
             <div className='container'>
                 <img src ={user.basics.picture} alt="Ara Matthew Profile Pic" />
-                <h1>Ara Matthew Ghiulezian</h1>
+                <h1>{user.basics.name}</h1>
                 <p>
-                Los Angeles based Software Engineer
+                  {pageSummaryMapping.about}
                 </p>
             </div>
           </div>
@@ -46,7 +50,7 @@ const Page = ({user}) =>  {
               <div className='container'>
                 <h1>Projects</h1>
                 <p>
-                  Showcased here are some of the projects I have worked on in the past. Chekout out my <a href={user.basics.profiles[1].url}>GitHub</a> for more details and projects.
+                {pageSummaryMapping.projects}
                 </p>
               </div>
           </div>
@@ -58,7 +62,7 @@ const Page = ({user}) =>  {
             <div className='container'> 
               <h1>Experience</h1>
               <p>
-                To find out more about each jobsite, click on the tab to find out more!
+              {pageSummaryMapping.experience}
               </p>
             </div>
           </div>
