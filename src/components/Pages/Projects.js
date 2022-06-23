@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectModal from '../ProjectModal';
+//import ProjectModal from '../ProjectModal';
 
 
 
