@@ -21,7 +21,7 @@ const App = () => {
     return ( <div>   </div>);
   }
   return(
-      <Page className="page" user={user} />
+      <Page class="bg-gray-500" className="page" user={user} />
 
   );
 

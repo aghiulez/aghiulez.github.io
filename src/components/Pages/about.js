@@ -11,7 +11,7 @@ const About = ({user}) => {
                 <div className ='bio'> 
                     <h1>About Me</h1>
                     <p> {user.basics.summary} </p>
-                    <p className='forwards'> Want to know more about me? Check out my <a href='/experience'> experience </a>and <a href='/projects'> projects!</a></p>
+                    <p class="bg-gray-500"className='forwards'> Want to know more about me? Check out my <a href='/experience'> experience </a>and <a href='/projects'> projects!</a></p>
                 </div> 
 
                 <div className ='contacts'> 
