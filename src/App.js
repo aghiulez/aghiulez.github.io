@@ -21,7 +21,7 @@ const App = () => {
     return ( <div>   </div>);
   }
   return(
-      <Page className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10" user={user} />
+      <Page user={user} />
 
   );
 

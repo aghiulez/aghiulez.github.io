@@ -20,7 +20,7 @@ const Page = ({user}) =>  {
       (obj, item) => Object.assign(obj, { [item.name]: item.keywords[0] }), {});
 
     return (
-      <section class="bg-gray-500" id="page">
+      <section  id="page">
       <Switch  >          
         <Route path="/contact">
           <div className = "pageSummary"> 
