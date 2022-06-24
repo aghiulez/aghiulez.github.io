@@ -5,26 +5,27 @@ import { SocialIcon } from 'react-social-icons';
 const SocialLinks = ({user}) => {
 
     return (
-            <div className="SocialLinks">
+            <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0" className="SocialLinks">
 
 
                 {user.basics.profiles.map(profile => (
 
 
                 
-                    <div className = {profile.network} key ={profile.network}>
-                        <SocialIcon url={profile.url} target="_blank" style={{ height: 30, width: 30 }} bgColor="#ffffff"/>
-                        <em className="name"> {profile.network} </em>
-                    </div>
+                    <li className = {profile.network} key ={profile.network}>
+                        {/* <SocialIcon class="mr-4 hover:underline md:mr-6 " url={profile.url} target="_blank" style={{ height: 30, width: 30 }} bgColor="#ffffff"/> */}
+                        {/* <em className="name"> {profile.network} </em> */}
+                        {/* <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a> */}
+
+                    </li>
 
                     
                     
                 ))}
-                <div>
-                    <SocialIcon url={'mailto:'+ user.basics.email} network= 'email' style={{ height: 30, width: 30 }} bgColor="#ffffff"/>
-                    <em className="name"> email </em>
-                </div>
-            </div>
+                {/* <li>
+                    <SocialIcon class="mr-4 hover:underline md:mr-6 " url={'mailto:'+ user.basics.email} network= 'email' style={{ height: 30, width: 30 }} bgColor="#ffffff"/>
+                </li> */}
+            </ul>
            
         
     );
