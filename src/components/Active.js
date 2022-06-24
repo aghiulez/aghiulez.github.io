@@ -12,13 +12,15 @@ import {
 
 const Active = ({user}) =>  {
   return (
-    <Router class="bg-green-500 flex flex-grow">
-      <Navbar class="h-10 bg-red-500"/>
+    <div class="min-h-screen flex flex-col">
+    <Router>
+      <Navbar />
       {/* <div class="flex flex-col space-y-4 " className ="curr"> */}
-        <Page class="bg-green-500 flex-grow" user = {user}/>
+        <Page user = {user}/>
       {/* </div> */}
-      <Footer class="h-10 bg-blue-500" user = {user} />
+      <Footer  user = {user} />
     </Router> 
+    </div>
   );
 }
 

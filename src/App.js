@@ -18,10 +18,10 @@ const App = () => {
   
   if(!user){
     console.log("nothing");
-    return ( <div class="bg-green-500 flex flex-grow">   </div>);
+    return ( <div >   </div>);
   }
   return(
-      <Page class="bg-green-500 flex flex-grow" user={user} />
+      <Page  user={user} />
 
   );
 

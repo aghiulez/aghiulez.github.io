@@ -5,7 +5,7 @@ import {
 
 // const pages = ['Products', 'Pricing', 'Login'];
 // const navLinks = pages.map(page => <a key={page} className="no-underline text-gray-800 font-semibold hover:text-gray-600" href={`#${page}`}>{page}</a>);
-const pages = ['about', 'projects', 'experience','contact'];
+const pages = ['about', 'projects', 'experience','contact']; //TODO populate list based on gitconnected response
 const navLinks = pages.map(page => <Link to={'/'+ page} className="no-underline text-gray-800 font-semibold hover:text-gray-600"  aria-current="page">{page}</Link>);
 
 
