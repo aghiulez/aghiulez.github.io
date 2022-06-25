@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import {
-    Link
+  Link
 } from "react-router-dom";
 
 // const pages = ['Products', 'Pricing', 'Login'];
 // const navLinks = pages.map(page => <a key={page} className="no-underline text-gray-800 font-semibold hover:text-gray-600" href={`#${page}`}>{page}</a>);
-const pages = ['about', 'projects', 'experience','contact']; //TODO populate list based on gitconnected response
-const navLinks = pages.map(page => <Link to={'/'+ page} className="no-underline text-gray-800 font-semibold hover:text-gray-600"  aria-current="page">{page}</Link>);
+const pages = ['about', 'projects', 'experience', 'contact']; //TODO populate list based on gitconnected response
+const navLinks = pages.map(page => <Link to={'/' + page} className="no-underline text-gray-800 font-semibold hover:text-gray-600" aria-current="page">{page}</Link>);
 
 
 const Navbar = ({ menuOpen, setMenuOpen }) => (
   <div className="flex items-center justify-between p-4">
     <div className="flex items-center">
       <FireSvg />
-      <a href="#home" className="text-xl font-bold no-underline text-gray-800 hover:text-gray-600">AraMatthew.com</a>
+      <a href="/" className="text-xl font-bold no-underline text-gray-800 hover:text-gray-600">AraMatthew.com</a>
     </div>
     <nav className="hidden md:block space-x-6">
       {navLinks}
@@ -45,18 +45,19 @@ const Page = () => {
 
 
 
-    const [menuOpen, setMenuOpen] = useState(false);
-    return (
-      <div className="bg-gradient-to-r from-blue-200 to-blue-100">
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        {menuOpen &&
-          <MobileMenu>
-            {navLinks}
-          </MobileMenu>}
-      </div>
-    );
+  const [menuOpen, setMenuOpen] = useState(false);
+  return (
+    <div className="bg-gradient-to-r from-blue-200 to-blue-100">
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      {menuOpen &&
+        <MobileMenu>
+          {navLinks}
+        </MobileMenu>}
+    </div>
+  );
 
 }
+
 
 
 export default Page;
