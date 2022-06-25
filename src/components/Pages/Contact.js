@@ -8,12 +8,12 @@ function ContactForm() {
     return <form> <p>Thank you, I will get back to you soon!</p></form>;
   }
   return (
-    
+
     <form onSubmit={handleSubmit}>
       <label htmlFor="email">
         Email:
       </label>
-      <input
+      <input class="form-input px-3 py-2 rounded-md"
         id="email"
         type="email"
         name="email"
@@ -23,14 +23,16 @@ function ContactForm() {
         field="email"
         errors={state.errors}
       />
-      <div className='label'>
-        <label>Message:</label>
+      <div className="flex flex-col col-span-2">
+        <div className='label'>
+          <label>Message:</label>
+        </div>
+
+        <textarea className="messageInput" class="form-input px-3 py-2 rounded-md"
+          id="message"
+          name="message"
+        />
       </div>
-      
-      <textarea className = "messageInput"
-        id="message"
-        name="message"
-      />
       <ValidationError
         prefix="Message"
         field="message"
@@ -39,7 +41,7 @@ function ContactForm() {
       <button type="submit" disabled={state.submitting}>
         Submit
       </button>
-      
+
     </form>
   );
 }
