@@ -6,14 +6,14 @@ import {
 // const pages = ['Products', 'Pricing', 'Login'];
 // const navLinks = pages.map(page => <a key={page} className="no-underline text-gray-800 font-semibold hover:text-gray-600" href={`#${page}`}>{page}</a>);
 const pages = ['about', 'projects', 'experience', 'contact']; //TODO populate list based on gitconnected response
-const navLinks = pages.map(page => <Link to={'/' + page} className="no-underline text-gray-800 font-semibold hover:text-gray-600" aria-current="page">{page}</Link>);
+const navLinks = pages.map(page => <Link to={'/' + page} className="no-underline text-xl  text-gray-800 font-semibold hover:text-gray-600" aria-current="page">{page}</Link>);
 
 
 const Navbar = ({ menuOpen, setMenuOpen }) => (
-  <div className="flex items-center justify-between p-4">
+  <div className="flex items-center justify-between pt-5 pb-4 px-16">
     <div className="flex items-center">
-      <FireSvg />
-      <a href="/" className="text-xl font-bold no-underline text-gray-800 hover:text-gray-600">AraMatthew.com</a>
+      {/* <FireSvg /> */}
+      <a href="/" className="text-2xl font-bold no-underline text-gray-800 hover:text-gray-600">{"< AraMatthew"}<span class="text-blue-600">.com</span> {">"}</a>
     </div>
     <nav className="hidden md:block space-x-6">
       {navLinks}
@@ -47,7 +47,7 @@ const Page = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="bg-gradient-to-r from-blue-200 to-blue-100">
+    <div >
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {menuOpen &&
         <MobileMenu>
