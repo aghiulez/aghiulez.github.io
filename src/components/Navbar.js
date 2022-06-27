@@ -13,7 +13,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => (
   <div className="flex items-center justify-between pt-5 pb-4 px-16">
     <div className="flex items-center">
       {/* <FireSvg /> */}
-      <a href="/" className="text-2xl font-bold no-underline text-gray-800 hover:text-gray-600">{"< AraMatthew"}<span class="text-blue-600">.com</span> {">"}</a>
+      <a href="/" className="text-2xl font-bold no-underline text-gray-800 hover:text-gray-600">{"< AraMatthew"}<span class="text-sky-900">.com</span> {">"}</a>
     </div>
     <nav className="hidden md:block space-x-6">
       {navLinks}
