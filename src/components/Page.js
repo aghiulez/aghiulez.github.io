@@ -20,8 +20,8 @@ const Page = ({user}) =>  {
       (obj, item) => Object.assign(obj, { [item.name]: item.keywords[0] }), {});
 
     return (
-      <div class ="flex-1"  id="page">
-      {/* <Switch    >          
+      <div class ="flex flex-1 bg-black text-green-500"  id="page">
+      <Switch    >          
         <Route path="/contact">
           <div className = "pageSummary"> 
             <div className='container'>
@@ -73,7 +73,7 @@ const Page = ({user}) =>  {
           <Home user = {user}/>
         </Route>
 
-      </Switch> */}
+      </Switch>
       </div>
 
 
