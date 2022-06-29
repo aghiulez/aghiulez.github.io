@@ -18,7 +18,7 @@ const App = () => {
   
   if(!user){
     console.log("nothing");
-    return ( <div >   </div>);
+    return ( <div class="bg-black" >   </div>);
   }
   return(
       <Page  user={user} />

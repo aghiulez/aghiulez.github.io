@@ -36,11 +36,11 @@ const Page = ({user}) =>  {
         <Route path="/about">
           <div className = "pageSummary"> 
             <div className='container'>
-                <img src ={user.basics.picture} alt="Ara Matthew Profile Pic" />
-                <h1>{user.basics.name}</h1>
-                <p>
+                {/* <img src ={user.basics.picture} alt="Ara Matthew Profile Pic" />
+                <h1>{user.basics.name}</h1> */}
+                {/* <p>
                   {pageSummaryMapping.about}
-                </p>
+                </p> */}
             </div>
           </div>
           <About className = "container" user = {user} />
