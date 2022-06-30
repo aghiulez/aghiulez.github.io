@@ -59,14 +59,14 @@ const Page = ({user}) =>  {
         </Route>
 
         <Route path="/experience">
-          <div className = "pageSummary">
+          {/* <div className = "pageSummary">
             <div className='container'> 
               <h1>Experience</h1>
               <p>
               {pageSummaryMapping.experience}
               </p>
             </div>
-          </div>
+          </div> */}
           <Experience user = {user}/>
         </Route>
 

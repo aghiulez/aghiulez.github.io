@@ -7,6 +7,7 @@ function ContactForm() {
   if (state.succeeded) {
     return <form> <p>Thank you, I will get back to you soon!</p></form>;
   }
+  //https://tailwindcomponents.com/component/tailwind-css-modal
   return (
 
     <form onSubmit={handleSubmit}>
