@@ -62,9 +62,9 @@ const Projects = ({ user }) => {
 
        
 
-        <section id="experiencepage" class="text-gray-600 body-font pt-4">
+        <section id="experiencepage" class="text-gray-600 body-font p-4">
             
-        <div class="flex flex-wrap -m-4">
+        <div class="flex flex-wrap -m-4 ">
             {user.work.map(work => (
 
                 experience(work)
