@@ -20,7 +20,8 @@ const Page = ({user}) =>  {
       (obj, item) => Object.assign(obj, { [item.name]: item.keywords[0] }), {});
 
     return (
-      <div class ="flex flex-1 bg-black text-green-500"  id="page">
+      
+      <div class ="flex flex-1 bg-[url('https://512pixels.net/downloads/macos-wallpapers-thumbs/10-5--thumb.png')] text-green-500"  id="page">
       <Switch    >          
         <Route path="/contact">
           <div className = "pageSummary"> 
@@ -46,14 +47,14 @@ const Page = ({user}) =>  {
           <About className = "container" user = {user} />
         </Route>
         <Route path="/projects">
-          <div className = "pageSummary"> 
+          {/* <div className = "pageSummary"> 
               <div className='container'>
                 <h1>Projects</h1>
                 <p>
                 {pageSummaryMapping.projects}
                 </p>
               </div>
-          </div>
+          </div> */}
           <Projects user = {user}/>
         </Route>
 
