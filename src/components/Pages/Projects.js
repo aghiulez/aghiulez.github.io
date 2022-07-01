@@ -23,12 +23,11 @@ const Projects = ({user}) => {
 
 
     return (
-        <section id="projectspage">
+        <section class="flex flex-wrap" id="projectspage">
 
 
 
 
-            <div className='projects'> 
                 {user.projects.map(project => (
                     projectCard(project)
                     // <div className = 'project'   key={project.name} >
@@ -66,7 +65,7 @@ const Projects = ({user}) => {
                     // </div>
                 
                 ))}
-            </div>
+            
 
 
         </section>
