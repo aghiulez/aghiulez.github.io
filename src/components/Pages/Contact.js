@@ -1,13 +1,14 @@
 // Make sure to run npm install @formspree/react
 // For more help visit https://formspr.ee/react-help
 import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+// import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
-  const [state, handleSubmit] = useForm("xjvaajap");
-  if (state.succeeded) {
-    return <form> <p>Thank you, I will get back to you soon!</p></form>;
-  }
+  // const [state, handleSubmit] = useForm("xjvaajap");
+  // if (state.succeeded) {
+  //   return <form> <p>Thank you, I will get back to you soon!</p></form>;
+  // }
   //https://tailwindcomponents.com/component/tailwind-css-modal
+  //https://tailwindcomponents.com/component/tailwind-contact-form
   return (
 
     // <form onSubmit={handleSubmit}>
@@ -47,22 +48,10 @@ function ContactForm() {
 
     <div class="flex items-center justify-center p-12">
       <div class="mx-auto w-full max-w-[550px]">
-        <form action="https://formbold.com/s/FORM_ID" method="POST">
-          <div class="mb-5">
-            <label
-              for="name"
-              class="mb-3 block text-base font-medium text-[#07074D]"
-            >
-              Full Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Full Name"
-              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-            />
-          </div>
+        <form    
+          action="https://formspree.io/f/xjvaajap"
+          method="POST"
+        >
           <div class="mb-5">
             <label
               for="email"
@@ -75,21 +64,6 @@ function ContactForm() {
               name="email"
               id="email"
               placeholder="example@domain.com"
-              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-            />
-          </div>
-          <div class="mb-5">
-            <label
-              for="subject"
-              class="mb-3 block text-base font-medium text-[#07074D]"
-            >
-              Subject
-            </label>
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="Enter your subject"
               class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
             />
           </div>
