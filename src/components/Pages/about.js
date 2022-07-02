@@ -1,36 +1,89 @@
 import React from 'react';
 import SocialLinks from '../SocialLinks';
 
-const About = ({user}) => {
+const About = ({ user }) => {
 
     return (
-            <section class="flex py-16 pl-16 " id="about">
 
-                  {/* <img className="profile-pic"  src={user.basics.picture} alt="Ara Matthew Profile Pic" /> */}
-               
-                
-                {/* <p>
-                  {pageSummaryMapping.about}
-                </p> */}
-                <div className ='bio'> 
-                    {/* <h1>About Me</h1> */}
-                    <h1 class="text-2xl">Hi my name is {user.basics.name.split(" ")[0]}!</h1> 
-                    <p  class="py-6"> {user.basics.summary} </p>
-                    {/* <p class="bg-gray-500"className='forwards'> Want to know more about me? Check out my <a href='/experience'> experience </a>and <a href='/projects'> projects!</a></p> */}
-                </div> 
-                <div class="px-16">
-                    <img class="object-contain" src ={user.basics.picture} alt="Ara Matthew Profile Pic" />
-
-                </div>
-                {/* <div className ='contacts'> 
-                    <h1>Contact</h1>
-                    <SocialLinks user={user} />
-
-                </div>  */}
-
-            </section>
-           
+        <div class="pt-4 relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16">
+            <div class="px-6">
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full flex justify-center">
+                        <div class="relative">
+                            <img src={user.basics.image} class="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]" />
+                        </div>
+                    </div>
+                    <div class="w-full text-center mt-20">
+                        <div class="flex justify-center lg:pt-4 pt-8 pb-0">
+                            {/* <div class="p-3 text-center">
+                                <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">{user.basics.yearsOfExperience}</span>
+                                <span class="text-sm text-slate-400">YoE</span>
+                            </div>
+                            <div class="p-3 text-center">
+                                <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">2,454</span>
+                                <span class="text-sm text-slate-400">Followers</span>
+                            </div>
         
+                            <div class="p-3 text-center">
+                                <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">564</span>
+                                <span class="text-sm text-slate-400">Following</span>
+                            </div> */}
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-2">
+                    <h3 class="text-2xl text-slate-700 font-bold leading-normal mb-1">{user.basics.name}</h3>
+                    <div class="text-xs mt-0 mb-2 text-slate-400 font-bold uppercase">
+                        <i class="fas fa-map-marker-alt mr-2 text-slate-400 opacity-75"></i>{user.basics.region}, CA
+                    </div>
+                </div>
+                <div class="mt-6 py-6 border-t border-slate-200 text-center">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="w-full px-4">
+                            <p class="font-light leading-relaxed text-slate-600 mb-4">{user.basics.summary}</p>
+                            {/* <a href="javascript:;" class="font-normal text-slate-700 hover:text-slate-400">Follow Account</a> */}
+                            <div class="flex justify-center lg:pt-4 pt-8 pb-0">
+                                <div class="p-3 text-center">
+                                    <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">{user.basics.yearsOfExperience}</span>
+                                    <span class="text-sm text-slate-400">YoE</span>
+                                </div>
+                                <div class="p-3 text-center">
+                                    <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">2,454</span>
+                                    <span class="text-sm text-slate-400">Followers</span>
+                                </div>
+
+                                <div class="p-3 text-center">
+                                    <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">564</span>
+                                    <span class="text-sm text-slate-400">Following</span>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div class="w-full text-center mt-20">
+                            <div class="flex justify-center lg:pt-4 pt-8 pb-0">
+                            <div class="p-3 text-center">
+                                <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">{user.basics.yearsOfExperience}</span>
+                                <span class="text-sm text-slate-400">YoE</span>
+                            </div>
+                            <div class="p-3 text-center">
+                                <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">2,454</span>
+                                <span class="text-sm text-slate-400">Followers</span>
+                            </div>
+        
+                            <div class="p-3 text-center">
+                                <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">564</span>
+                                <span class="text-sm text-slate-400">Following</span>
+                            </div>
+                        </div>
+                        </div> */}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
     );
 }
 

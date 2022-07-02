@@ -5,7 +5,7 @@ import ReactTypingEffect from 'react-typing-effect';
 const Home = ({ user }) => {
     // https://tailwindcomponents.com/component/mac-terminal
     return (
-        <section class="bg-black grow bg-[url('https://512pixels.net/downloads/macos-wallpapers-thumbs/10-5--thumb.png')] " id="home">
+        <section  id="home">
 
             {/* <div class="pt-4 px-4">
                 <h1 class="text-green-500">> Hello, my name is <strong>{user.basics.name}</strong></h1>

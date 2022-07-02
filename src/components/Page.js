@@ -21,17 +21,17 @@ const Page = ({user}) =>  {
 
     return (
       
-      <div class ="flex flex-1 bg-[url('https://512pixels.net/downloads/macos-wallpapers-thumbs/10-5--thumb.png')] text-green-500"  id="page">
+      <div class ="flex flex-1 bg-[url('https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80')] text-green-500"  id="page">
       <Switch    >          
         <Route path="/contact">
-          <div className = "pageSummary"> 
+          {/* <div className = "pageSummary"> 
             <div className='container'>
                   <h1>Contact</h1>
                   <p>
                     {pageSummaryMapping.contact}
                   </p>
                 </div>
-          </div>
+          </div> */}
           <Contact />
         </Route>
         <Route path="/about">
